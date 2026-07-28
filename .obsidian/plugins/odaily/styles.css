@@ -1,0 +1,1394 @@
+/* Odaily Home — macOS 26 Liquid Glass Design */
+
+.odaily-home {
+  --od-home-bg: #f2f1ef;
+  --od-home-text: #1d1d1f;
+  --od-home-muted: #86868b;
+  --od-home-glass: rgba(255, 255, 255, 0.36);
+  --od-home-glass-border: rgba(255, 255, 255, 0.56);
+  --od-home-glass-hover: rgba(255, 255, 255, 0.52);
+  --od-home-card: rgba(255, 255, 255, 0.46);
+  --od-home-card-border: rgba(255, 255, 255, 0.6);
+  --od-home-card-shadow: 0 12px 40px rgba(0, 0, 0, 0.14), 0 4px 12px rgba(0, 0, 0, 0.08);
+  --od-home-card-shadow-hover: 0 24px 60px rgba(0, 0, 0, 0.22), 0 8px 20px rgba(0, 0, 0, 0.12);
+  --od-home-line: rgba(0, 0, 0, 0.04);
+  --od-home-line-strong: rgba(0, 0, 0, 0.07);
+  --od-home-red: #ff3b30;
+  --od-home-note: rgba(255, 218, 110, 0.3);
+  --od-home-note-line: rgba(171, 132, 34, 0.14);
+  --od-home-thumb: rgba(255, 255, 255, 0.72);
+  --od-home-thumb-border: rgba(0, 0, 0, 0.05);
+  --od-home-recent-hover: rgba(255, 255, 255, 0.48);
+
+  container-type: inline-size;
+  position: relative;
+  isolation: isolate;
+  min-height: 100%;
+  overflow: auto;
+  background: var(--od-home-bg);
+  color: var(--od-home-text);
+}
+
+.theme-dark .odaily-home {
+  --od-home-bg: #000000;
+  --od-home-text: #f5f5f7;
+  --od-home-muted: #98989d;
+  --od-home-glass: rgba(255, 255, 255, 0.06);
+  --od-home-glass-border: rgba(255, 255, 255, 0.08);
+  --od-home-glass-hover: rgba(255, 255, 255, 0.1);
+  --od-home-card: rgba(255, 255, 255, 0.07);
+  --od-home-card-border: rgba(255, 255, 255, 0.1);
+  --od-home-card-shadow: 0 12px 40px rgba(0, 0, 0, 0.45), 0 4px 12px rgba(0, 0, 0, 0.28);
+  --od-home-card-shadow-hover: 0 24px 60px rgba(0, 0, 0, 0.6), 0 8px 20px rgba(0, 0, 0, 0.38);
+  --od-home-line: rgba(255, 255, 255, 0.06);
+  --od-home-line-strong: rgba(255, 255, 255, 0.1);
+  --od-home-note: rgba(178, 132, 36, 0.16);
+  --od-home-note-line: rgba(245, 197, 87, 0.1);
+  --od-home-thumb: rgba(255, 255, 255, 0.06);
+  --od-home-thumb-border: rgba(255, 255, 255, 0.07);
+  --od-home-recent-hover: rgba(255, 255, 255, 0.04);
+
+  background: var(--od-home-bg);
+}
+
+/* 深色模式 + 背景：深色玻璃变量 */
+.theme-dark .odaily-home--with-background {
+  --od-home-text: #ffffff;
+  --od-home-muted: rgba(255, 255, 255, 0.74);
+  --od-home-glass: rgba(13, 22, 58, 0.46);
+  --od-home-glass-border: rgba(255, 255, 255, 0.2);
+  --od-home-glass-hover: rgba(255, 255, 255, 0.16);
+  --od-home-card: rgba(18, 28, 72, 0.42);
+  --od-home-card-border: rgba(255, 255, 255, 0.22);
+  --od-home-card-shadow: 0 22px 48px rgba(0, 0, 0, 0.35);
+  --od-home-card-shadow-hover: 0 36px 72px rgba(0, 0, 0, 0.5);
+  --od-home-line: rgba(255, 255, 255, 0.14);
+  --od-home-line-strong: rgba(255, 255, 255, 0.22);
+  --od-home-note: rgba(178, 132, 36, 0.16);
+  --od-home-note-line: rgba(245, 197, 87, 0.1);
+  --od-home-thumb: rgba(255, 255, 255, 0.13);
+  --od-home-thumb-border: rgba(255, 255, 255, 0.18);
+  --od-home-recent-hover: rgba(255, 255, 255, 0.1);
+}
+
+/* ── Reset ──────────────────────────────────────────── */
+
+.odaily-home,
+.odaily-home *,
+.odaily-home *::before,
+.odaily-home *::after {
+  box-sizing: border-box;
+}
+
+.odaily-home button {
+  font-family: inherit;
+}
+
+/* ── Shell ──────────────────────────────────────────── */
+
+.odaily-home__shell {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 520px);
+  margin: 0 auto;
+  padding: 52px 0 32px;
+}
+
+/* ── Header ─────────────────────────────────────────── */
+
+.odaily-home__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.odaily-home__header h1 {
+  margin: 0;
+  color: var(--od-home-text);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.odaily-home__header-actions {
+  display: none;
+  align-items: center;
+  gap: 8px;
+}
+
+.odaily-home__header-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  appearance: none;
+  border: 1px solid var(--od-home-glass-border);
+  border-radius: 8px;
+  background: var(--od-home-glass);
+  background-color: var(--od-home-glass) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  box-shadow: none !important;
+  color: var(--od-home-muted);
+  cursor: pointer;
+  padding: 0;
+  transition:
+    background 200ms ease,
+    border-color 200ms ease,
+    color 200ms ease,
+    transform 200ms ease;
+}
+
+.odaily-home__header-btn:hover,
+.odaily-home__header-btn:focus-visible {
+  background: var(--od-home-glass-hover);
+  background-color: var(--od-home-glass-hover) !important;
+  border-color: rgba(128, 128, 128, 0.2);
+  color: var(--od-home-text);
+  transform: translateY(-1px);
+}
+
+.odaily-home__header-btn svg {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+
+/* ── Action Cards Grid ─────────────────────────────── */
+
+.odaily-home__actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 0 0 24px;
+}
+
+/* ── Glass Card ────────────────────────────────────── */
+
+.odaily-home__card {
+  display: block !important;
+  position: relative;
+  min-width: 0;
+  height: 152px;
+  padding: 18px;
+  overflow: hidden;
+  appearance: none;
+  border: 1px solid var(--od-home-card-border);
+  border-radius: 20px;
+  background: var(--od-home-card);
+  background-color: var(--od-home-card) !important;
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  box-shadow: var(--od-home-card-shadow);
+  box-shadow: var(--od-home-card-shadow) !important;
+  color: var(--od-home-text);
+  cursor: pointer;
+  text-align: left;
+  transition:
+    transform 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 240ms ease,
+    border-color 240ms ease;
+}
+
+.odaily-home--with-background .odaily-home__card {
+  backdrop-filter: blur(30px) saturate(125%);
+  -webkit-backdrop-filter: blur(30px) saturate(125%);
+}
+
+.odaily-home__card:hover,
+.odaily-home__card:focus-visible {
+  border-color: rgba(128, 128, 128, 0.2);
+  box-shadow: var(--od-home-card-shadow-hover);
+  box-shadow: var(--od-home-card-shadow-hover) !important;
+  transform: translateY(-3px);
+}
+
+.odaily-home__card--quick-note,
+.odaily-home__card--new-document,
+.odaily-home__card--todo-list {
+  width: auto;
+  transform: none;
+  z-index: auto;
+}
+
+.odaily-home__card--quick-note:hover,
+.odaily-home__card--quick-note:focus-visible,
+.odaily-home__card--new-document:hover,
+.odaily-home__card--new-document:focus-visible,
+.odaily-home__card--todo-list:hover,
+.odaily-home__card--todo-list:focus-visible {
+  transform: translateY(-3px);
+}
+
+/* ── Card Content ──────────────────────────────────── */
+
+.odaily-home__card-top {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* 补偿快速笔记 date-badge 带来的额外偏移，使三个卡片标题水平对齐 */
+.odaily-home__card--new-document .odaily-home__card-top,
+.odaily-home__card--todo-list .odaily-home__card-top {
+  padding-top: 7px;
+}
+
+.odaily-home__card-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.odaily-home__card-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.odaily-home__card-title-area {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.odaily-home__card-title-area strong {
+  overflow-wrap: anywhere;
+  color: var(--od-home-text);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.odaily-home__card-subtitle {
+  position: relative;
+  z-index: 2;
+  display: block;
+  color: var(--od-home-muted);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.theme-dark .odaily-home--with-background .odaily-home__card-subtitle {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+/* ── Date Badge ────────────────────────────────────── */
+
+.odaily-home__date-badge {
+  display: grid;
+  width: 34px;
+  min-width: 34px;
+  overflow: hidden;
+  border-radius: 7px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.theme-dark .odaily-home__date-badge {
+  background: #e8e8e8;
+}
+
+.odaily-home__date-month,
+.odaily-home__date-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0;
+}
+
+.odaily-home__date-month {
+  height: 16px;
+  background: var(--od-home-red);
+  color: #ffffff;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.odaily-home__date-day {
+  height: 18px;
+  color: #1d1d1f;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* ── Card Lines ────────────────────────────────────── */
+
+.odaily-home__card-lines {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 6px;
+  margin-top: 22px;
+}
+
+.odaily-home__card-lines span,
+.odaily-home__wave {
+  display: block;
+  height: 18px;
+  background: var(--od-home-line-strong);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg width='140' height='24' viewBox='0 0 140 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 14 C17 5 29 5 43 14 S70 23 84 14 S112 5 137 12' fill='none' stroke='black' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg width='140' height='24' viewBox='0 0 140 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 14 C17 5 29 5 43 14 S70 23 84 14 S112 5 137 12' fill='none' stroke='black' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+}
+
+/* Quick-note: longer lines, centered */
+.odaily-home__card--quick-note .odaily-home__card-lines span:nth-child(1) {
+  width: 96%;
+  justify-self: center;
+}
+
+.odaily-home__card--quick-note .odaily-home__card-lines span:nth-child(2) {
+  width: 88%;
+  justify-self: center;
+}
+
+.odaily-home__card--quick-note .odaily-home__card-lines span:nth-child(3) {
+  display: none;
+  width: 76%;
+  justify-self: center;
+}
+
+/* New-document: different curve, same thickness (18px), centered */
+.odaily-home__card--new-document .odaily-home__card-lines {
+  margin-top: 18px;
+}
+
+.odaily-home__card--new-document .odaily-home__card-lines span {
+  justify-self: center;
+  background: var(--od-home-line-strong);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg width='140' height='24' viewBox='0 0 140 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 16 Q35 6 70 16 T137 16' fill='none' stroke='black' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg width='140' height='24' viewBox='0 0 140 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 16 Q35 6 70 16 T137 16' fill='none' stroke='black' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+}
+
+.odaily-home__card--new-document .odaily-home__card-lines span:nth-child(1) {
+  width: 82%;
+}
+
+.odaily-home__card--new-document .odaily-home__card-lines span:nth-child(2) {
+  width: 65%;
+}
+
+/* ── Note Patch ────────────────────────────────────── */
+
+.odaily-home__note-patch {
+  position: relative;
+  z-index: 2;
+  width: 72%;
+  height: 30px;
+  margin: -14px auto 0;
+  border-radius: 3px;
+  background: var(--od-home-note);
+}
+
+/* ── Todo Preview ──────────────────────────────────── */
+
+.odaily-home__todo-preview {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 7px;
+  margin-top: 14px;
+}
+
+.odaily-home__todo-row {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 8px;
+  align-items: center;
+}
+
+.odaily-home__todo-box {
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--od-home-line-strong);
+  border-radius: 5px;
+  background: var(--od-home-line);
+}
+
+.odaily-home__wave {
+  width: 100%;
+}
+
+.odaily-home__wave--short {
+  display: none;
+}
+
+.odaily-home__todo-row:nth-child(3) .odaily-home__wave:not(.odaily-home__wave--short) {
+  display: none;
+}
+
+/* ── Search Bar ────────────────────────────────────── */
+
+.odaily-home__search {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 42px;
+  margin: 0 0 24px;
+  padding: 0 14px;
+  appearance: none;
+  border: 1px solid var(--od-home-glass-border);
+  border-radius: 14px;
+  background: var(--od-home-glass);
+  background-color: var(--od-home-glass) !important;
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  box-shadow: none !important;
+  color: var(--od-home-muted);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-align: left;
+  transition:
+    background 200ms ease,
+    border-color 200ms ease,
+    color 200ms ease,
+    transform 200ms ease;
+}
+
+.odaily-home__search:hover,
+.odaily-home__search:focus-visible {
+  background: var(--od-home-glass-hover);
+  background-color: var(--od-home-glass-hover) !important;
+  border-color: rgba(128, 128, 128, 0.18);
+  color: var(--od-home-text);
+  transform: translateY(-1px);
+}
+
+.theme-dark .odaily-home--with-background .odaily-home__search {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(10, 18, 48, 0.48);
+  background-color: rgba(10, 18, 48, 0.48) !important;
+  backdrop-filter: blur(26px) saturate(120%);
+  -webkit-backdrop-filter: blur(26px) saturate(120%);
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.theme-dark .odaily-home--with-background .odaily-home__search:hover,
+.theme-dark .odaily-home--with-background .odaily-home__search:focus-visible {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(18, 30, 72, 0.58);
+  background-color: rgba(18, 30, 72, 0.58) !important;
+  color: #ffffff;
+}
+
+.odaily-home__search-icon {
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.odaily-home__search-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2;
+}
+
+/* ── Recent Panel ──────────────────────────────────── */
+
+.odaily-home__recent-panel {
+  min-height: 340px;
+  padding: 20px 18px 24px;
+  border: 1px solid var(--od-home-glass-border);
+  border-radius: 20px;
+  background: var(--od-home-glass);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+}
+
+.theme-dark .odaily-home--with-background .odaily-home__recent-panel {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(8, 15, 42, 0.64);
+  backdrop-filter: blur(32px) saturate(118%);
+  -webkit-backdrop-filter: blur(32px) saturate(118%);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.26), 0 1px 2px rgba(255, 255, 255, 0.08) inset;
+}
+
+/* ── Recent Header ─────────────────────────────────── */
+
+.odaily-home__recent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.odaily-home__recent-header h2 {
+  margin: 0;
+  padding-left: 0;
+  color: var(--od-home-muted);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.3;
+}
+
+.theme-dark .odaily-home--with-background .odaily-home__recent-header h2 {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.odaily-home__refresh-btn {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 6px;
+  background: transparent !important;
+  background-color: transparent !important;
+  color: var(--od-home-muted);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transform-origin: center;
+  transition: color 180ms ease, opacity 180ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.theme-dark .odaily-home--with-background .odaily-home__refresh-btn {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.odaily-home__refresh-btn:hover,
+.odaily-home__refresh-btn:focus-visible {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: var(--od-home-text);
+  box-shadow: none !important;
+}
+
+.odaily-home__refresh-btn:active {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: var(--od-home-text);
+  box-shadow: none !important;
+}
+
+.odaily-home__refresh-btn svg {
+  width: 15px;
+  height: 15px;
+  stroke-width: 1.8;
+  transform-origin: center;
+}
+
+.odaily-home__refresh-btn--spinning svg {
+  animation: odaily-refresh-spin 520ms ease-in-out both;
+}
+
+@keyframes odaily-refresh-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+/* ── Recent List ───────────────────────────────────── */
+
+.odaily-home__recent-list {
+  display: grid;
+  gap: 4px;
+}
+
+.odaily-home__recent-item {
+  display: grid !important;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+  padding: 6px 10px;
+  appearance: none;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: var(--od-home-text);
+  cursor: pointer;
+  text-align: left;
+  transition: background 180ms ease;
+}
+
+.odaily-home__recent-item:hover,
+.odaily-home__recent-item:focus-visible {
+  background: var(--od-home-recent-hover);
+  background-color: var(--od-home-recent-hover) !important;
+}
+
+.theme-dark .odaily-home--with-background .odaily-home__recent-item {
+  color: #ffffff;
+}
+
+.theme-dark .odaily-home--with-background .odaily-home__recent-item:hover,
+.theme-dark .odaily-home--with-background .odaily-home__recent-item:focus-visible {
+  background: rgba(255, 255, 255, 0.11);
+  background-color: rgba(255, 255, 255, 0.11) !important;
+}
+
+/* ── Thumbnails ────────────────────────────────────── */
+
+.odaily-home__thumb {
+  position: relative;
+  width: 32px;
+  height: 40px;
+  overflow: hidden;
+  border: 1px solid var(--od-home-thumb-border);
+  border-radius: 6px;
+  background: var(--od-home-thumb);
+}
+
+.theme-dark .odaily-home--with-background .odaily-home__thumb {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08) inset;
+}
+
+.odaily-home__thumb::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 11px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--od-home-line-strong);
+  box-shadow:
+    0 4px 0 var(--od-home-line),
+    0 8px 0 var(--od-home-line),
+    0 12px 0 var(--od-home-line);
+}
+
+.odaily-home__thumb span {
+  position: absolute;
+  left: 6px;
+  right: 5px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--od-home-line-strong);
+}
+
+.odaily-home__thumb span:nth-child(1) {
+  top: 22px;
+}
+
+.odaily-home__thumb span:nth-child(2) {
+  top: 26px;
+  right: 9px;
+}
+
+.odaily-home__thumb span:nth-child(3) {
+  top: 30px;
+  right: 12px;
+}
+
+.odaily-home__thumb--1 {
+  background:
+    linear-gradient(90deg, transparent 0 6px, rgba(0, 0, 0, 0.04) 6px 7px, transparent 7px),
+    var(--od-home-thumb);
+}
+
+.theme-dark .odaily-home__thumb--1 {
+  background:
+    linear-gradient(90deg, transparent 0 6px, rgba(255, 255, 255, 0.06) 6px 7px, transparent 7px),
+    var(--od-home-thumb);
+}
+
+.odaily-home__thumb--2::after,
+.odaily-home__thumb--3::after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 12px;
+  height: 8px;
+  border-radius: 3px;
+  background: rgba(68, 137, 255, 0.2);
+}
+
+.odaily-home__thumb--3::after {
+  width: 18px;
+  background: rgba(232, 160, 74, 0.18);
+}
+
+/* ── Recent Text ───────────────────────────────────── */
+
+.odaily-home__recent-title {
+  overflow: hidden;
+  color: var(--od-home-text);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.odaily-home__recent-meta {
+  margin-top: 3px;
+  color: var(--od-home-muted);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.theme-dark .odaily-home--with-background .odaily-home__recent-meta {
+  color: rgba(255, 255, 255, 0.66);
+}
+
+/* ── Empty State ───────────────────────────────────── */
+
+.odaily-home__empty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 120px;
+  color: var(--od-home-muted);
+  font-size: 14px;
+}
+
+/* ── Bottom Bar ─────────────────────────────────────── */
+
+.odaily-home__bottom-bar {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  gap: 8px;
+  z-index: 100;
+}
+
+.odaily-home__bottom-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  appearance: none;
+  border: 1px solid var(--od-home-glass-border);
+  border-radius: 10px;
+  background: var(--od-home-glass);
+  background-color: var(--od-home-glass) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  box-shadow: none !important;
+  color: var(--od-home-muted);
+  cursor: pointer;
+  padding: 0;
+  transition:
+    background 200ms ease,
+    border-color 200ms ease,
+    color 200ms ease,
+    transform 200ms ease;
+}
+
+.odaily-home__bottom-btn:hover,
+.odaily-home__bottom-btn:focus-visible {
+  background: var(--od-home-glass-hover);
+  background-color: var(--od-home-glass-hover) !important;
+  border-color: rgba(128, 128, 128, 0.2);
+  color: var(--od-home-text);
+  transform: translateY(-1px);
+}
+
+.odaily-home__bottom-btn svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+/* Tooltip */
+.odaily-home__bottom-btn[aria-label]::after {
+  content: attr(aria-label);
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease, transform 150ms ease;
+}
+
+.odaily-home__bottom-btn:hover[aria-label]::after,
+.odaily-home__bottom-btn:focus-visible[aria-label]::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ── Sidebar Calendar ───────────────────────────────── */
+
+.odaily-sidebar__calendar {
+  margin: 0 -12px 8px;
+  padding: 8px 12px 8px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.odaily-sidebar__body {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+  padding-bottom: 24px;
+}
+
+/* ── Sidebar Search ─────────────────────────────────── */
+
+.odaily-sidebar__toolbar {
+  margin: 0 0 10px;
+}
+
+.odaily-sidebar__search {
+  position: relative;
+  margin: 0 0 12px;
+}
+
+.odaily-sidebar__search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-faint);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.odaily-sidebar__search-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.odaily-sidebar__search-input {
+  width: 100%;
+  padding: 8px 10px 8px 36px !important;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-primary);
+  color: var(--text-normal);
+  font-size: 13px;
+  outline: none;
+  text-indent: 0;
+  transition: border-color 140ms ease;
+}
+
+.odaily-sidebar__search-input:focus {
+  border-color: var(--interactive-accent);
+}
+
+.odaily-sidebar__search-input::placeholder {
+  color: var(--text-faint);
+}
+
+.odaily-sidebar__highlight {
+  background: rgba(255, 234, 0, 0.4);
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+.theme-dark .odaily-sidebar__highlight {
+  background: rgba(255, 234, 0, 0.3);
+  color: inherit;
+}
+
+.odaily-sidebar__calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.odaily-sidebar__calendar-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: background 140ms ease, color 140ms ease;
+}
+
+.odaily-sidebar__calendar-title:hover {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.odaily-sidebar__calendar-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.odaily-sidebar__calendar-nav-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 4px;
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 2px 4px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background-color 140ms ease, color 140ms ease;
+}
+
+.odaily-sidebar__calendar-nav-btn:not(:hover) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.odaily-sidebar__calendar-nav-btn:hover {
+  background: transparent !important;
+  background-color: var(--background-modifier-hover) !important;
+  box-shadow: none !important;
+  color: var(--text-normal);
+}
+
+.odaily-sidebar__calendar-nav-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.odaily-sidebar__calendar-nav-btn--today {
+  width: auto;
+}
+
+.odaily-sidebar__calendar-monthnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.odaily-sidebar__calendar-monthlabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-normal);
+}
+
+.odaily-sidebar__calendar-dow {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.odaily-sidebar__calendar-dow-item {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-faint);
+  padding: 4px 0;
+}
+
+.odaily-sidebar__calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.odaily-sidebar__calendar-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 140ms ease;
+}
+
+.odaily-sidebar__calendar-day:hover {
+  background: var(--background-modifier-hover);
+}
+
+.odaily-sidebar__calendar-day--empty {
+  cursor: default;
+  pointer-events: none;
+}
+
+.odaily-sidebar__calendar-day--today {
+  font-weight: 700;
+  color: var(--text-accent);
+}
+
+.odaily-sidebar__calendar-day--selected {
+  background: var(--text-accent);
+  color: var(--text-on-accent);
+  font-weight: 600;
+}
+
+.odaily-sidebar__calendar-day--selected:hover {
+  background: var(--text-accent);
+  opacity: 0.85;
+}
+
+.odaily-sidebar__calendar-day-num {
+  font-size: 12px;
+}
+
+/* ── Sidebar ────────────────────────────────────────── */
+
+.odaily-sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 12px;
+  color: var(--text-normal);
+  font-size: 13px;
+}
+
+.odaily-sidebar__section h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-accent);
+}
+
+.odaily-sidebar__add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  margin: 0;
+  border-radius: 6px;
+  background-color: color-mix(in srgb, var(--text-accent) 22%, transparent) !important;
+  box-shadow: none !important;
+  color: var(--text-accent) !important;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.15s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.odaily-sidebar__add-btn:hover {
+  background-color: color-mix(in srgb, var(--text-accent) 35%, transparent) !important;
+  box-shadow: none !important;
+  color: var(--text-accent-hover, var(--text-accent)) !important;
+}
+
+.odaily-sidebar__section {
+  margin-bottom: 24px;
+}
+
+
+.odaily-sidebar__empty {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 12px;
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.odaily-sidebar__list {
+  display: grid;
+  gap: 2px;
+}
+
+.odaily-sidebar__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 140ms ease;
+}
+
+.odaily-sidebar__item:hover {
+  background: var(--background-modifier-hover);
+}
+
+.odaily-sidebar__item-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 1px;
+  color: var(--text-muted);
+}
+
+.odaily-sidebar__item-icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+.odaily-sidebar__item-checkbox {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 1px;
+  color: var(--text-muted);
+}
+
+.odaily-sidebar__item-checkbox svg {
+  width: 16px;
+  height: 16px;
+}
+
+.odaily-sidebar__item-checkbox--active {
+  cursor: pointer;
+  border-radius: 4px;
+  transition: color 140ms ease, background 140ms ease;
+}
+
+.odaily-sidebar__item-checkbox--active:hover {
+  color: var(--text-accent);
+  background: var(--background-modifier-hover);
+}
+
+.odaily-sidebar__item--done .odaily-sidebar__item-checkbox {
+  color: var(--text-success);
+}
+
+.odaily-sidebar__item--done .odaily-sidebar__item-title {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+/* 勾选后 2s 悔改期内样式 */
+.odaily-sidebar__item--pending .odaily-sidebar__item-checkbox {
+  color: var(--text-accent) !important;
+}
+
+.odaily-sidebar__item--pending .odaily-sidebar__item-title {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.odaily-sidebar__item-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.odaily-sidebar__item-title {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--text-normal);
+  word-break: break-word;
+}
+
+.odaily-sidebar__item-tag {
+  display: inline;
+  margin-right: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-accent);
+  white-space: nowrap;
+}
+
+.odaily-sidebar__item-tag + .odaily-sidebar__item-tag {
+  margin-left: 2px;
+}
+
+.odaily-sidebar__item-meta {
+  margin-top: 2px;
+  font-size: 11px;
+  color: var(--text-faint);
+  line-height: 1.3;
+}
+
+/* ── Modal Styles ───────────────────────────────────── */
+
+.odaily-modal-input {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  color: var(--text-normal);
+  font-size: 14px;
+  outline: none;
+}
+
+.odaily-modal-btnrow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.odaily-modal-cancel-btn {
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.odaily-modal-confirm-btn {
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: none;
+  background: var(--text-accent);
+  color: var(--text-on-accent);
+  cursor: pointer;
+}
+
+/* ── Task Completing Animation ──────────────────────── */
+
+.odaily-sidebar__item--completing {
+  overflow: hidden;
+  transition: opacity 280ms ease, max-height 280ms ease, margin-top 280ms ease, margin-bottom 280ms ease, padding-top 280ms ease, padding-bottom 280ms ease;
+}
+
+/* ── Settings Help ──────────────────────────────────── */
+
+.odaily-settings-help {
+  margin-top: 24px;
+  line-height: 1.8;
+}
+
+/* ── Responsive ────────────────────────────────────── */
+
+@container (max-width: 560px) {
+  .odaily-home__shell {
+    width: min(100%, 520px);
+    padding: 40px 20px 28px;
+  }
+
+  .odaily-home__header {
+    margin-bottom: 24px;
+  }
+
+  .odaily-home__actions {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .odaily-home__card {
+    flex: 1;
+    height: auto;
+    min-height: 0;
+    padding: 10px 6px;
+  }
+
+  .odaily-home__card-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding-top: 0 !important;
+  }
+
+  .odaily-home__card-title-area {
+    align-items: center;
+  }
+
+  .odaily-home__card-title-area strong {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .odaily-home__card-subtitle,
+  .odaily-home__card-lines,
+  .odaily-home__todo-preview,
+  .odaily-home__note-patch {
+    display: none;
+  }
+
+  .odaily-home__card--quick-note,
+  .odaily-home__card--new-document,
+  .odaily-home__card--todo-list,
+  .odaily-home__card--quick-note:hover,
+  .odaily-home__card--new-document:hover,
+  .odaily-home__card--todo-list:hover,
+  .odaily-home__card--quick-note:focus-visible,
+  .odaily-home__card--new-document:focus-visible,
+  .odaily-home__card--todo-list:focus-visible {
+    transform: none;
+  }
+
+  .odaily-home__header-actions {
+    display: flex;
+  }
+
+  .odaily-home__bottom-bar {
+    display: none;
+  }
+}
+
+/* ── Mobile Compact Cards ──────────────────────────── */
+
+.is-mobile .odaily-home__actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.is-mobile .odaily-home__card {
+  flex: 1;
+  height: auto;
+  min-height: 0;
+  padding: 10px 6px;
+}
+
+.is-mobile .odaily-home__card-top {
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding-top: 0 !important;
+}
+
+.is-mobile .odaily-home__card-title-area {
+  align-items: center;
+}
+
+.is-mobile .odaily-home__card-title-area strong {
+  font-size: 12px;
+  text-align: center;
+}
+
+.is-mobile .odaily-home__card-subtitle,
+.is-mobile .odaily-home__card-lines,
+.is-mobile .odaily-home__todo-preview,
+.is-mobile .odaily-home__note-patch {
+  display: none;
+}
+
+.is-mobile .odaily-home__header-actions {
+  display: flex;
+}
+
+.is-mobile .odaily-home__bottom-bar {
+  display: none;
+}

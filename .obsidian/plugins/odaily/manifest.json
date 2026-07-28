@@ -1,0 +1,10 @@
+{
+  "id": "odaily",
+  "name": "Odaily",
+  "version": "0.1.10",
+  "minAppVersion": "1.8.7",
+  "description": "A schedule-focused plugin for capturing ideas, managing notes and tasks, and boosting personal productivity.",
+  "author": "guchang",
+  "authorUrl": "https://github.com/guchang",
+  "isDesktopOnly": false
+}
