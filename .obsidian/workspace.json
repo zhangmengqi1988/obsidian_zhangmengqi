@@ -6,25 +6,57 @@
       {
         "id": "947462b9a3f438ed",
         "type": "tabs",
+        "dimension": 69.21397379912663,
         "children": [
           {
             "id": "7673cf194f97d0d6",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "未命名 3.base",
-                "viewName": "表格"
+                "file": "2026-07-28.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "未命名 3"
+              "icon": "lucide-file",
+              "title": "2026-07-28"
+            }
+          },
+          {
+            "id": "d9c1e7af47c05679",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "大厂面试官连环追问跨库Join你的方案代价是什么.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "大厂面试官连环追问跨库Join你的方案代价是什么"
+            }
+          },
+          {
+            "id": "3e02874cb2e4086e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "架构/数据基础概念.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "数据基础概念"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "1395d398bb4efd75",
         "type": "tabs",
+        "dimension": 30.786026200873362,
         "children": [
           {
             "id": "1348673280f9af98",
@@ -35,8 +67,19 @@
               "icon": "lucide-git-fork",
               "title": "关系图谱"
             }
+          },
+          {
+            "id": "51928287f8b6cb48",
+            "type": "leaf",
+            "state": {
+              "type": "odaily-home-view",
+              "state": {},
+              "icon": "layout-dashboard",
+              "title": "Odaily Home"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -179,13 +222,23 @@
               "icon": "lucide-list",
               "title": "未命名 的大纲"
             }
+          },
+          {
+            "id": "6edceaa6c35f18e3",
+            "type": "leaf",
+            "state": {
+              "type": "odaily-sidebar-view",
+              "state": {},
+              "icon": "list-checks",
+              "title": "Odaily 概览"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,17 +249,36 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
-      "github-sync:Sync with Remote": false
+      "github-sync:Sync with Remote": false,
+      "odaily:Open Odaily home": false,
+      "odaily:Open Odaily sidebar": false
     }
   },
-  "active": "1348673280f9af98",
+  "active": "3e02874cb2e4086e",
   "lastOpenFiles": [
+    "Pasted image 20260728150349.png",
+    "Pasted image 20260728150257.png",
+    "Pasted image 20260728150107.png",
+    "Pasted image 20260728145848.png",
     "未命名 3.base",
-    "2026-07-28.md",
     "未命名 2.base",
-    "未命名.canvas",
     "未命名 1.base",
+    "未命名.canvas",
     "未命名.base",
+    "架构/数据基础概念.md",
+    "大厂面试官连环追问跨库Join你的方案代价是什么.md",
+    "架构",
+    "数据基础概念.canvas",
+    "DDD概念与架构从分层到六边形整洁.md",
+    "2026-07-28.md",
+    "wechat_img_1785209872397_330.jpg",
+    "wechat_img_1785209872379_56.jpg",
+    "wechat_img_1785209872359_577.jpg",
+    "wechat_img_1785209872345_685.jpg",
+    "wechat_img_1785209872330_216.jpg",
+    "wechat_img_1785209863554_408.jpg",
+    "wechat_img_1785209863536_387.jpg",
+    "日复盘/未命名.md",
     "欢迎.md"
   ]
 }
