@@ -1,0 +1,9 @@
+{
+  "remoteURL": "git@github.com:zhangmengqi1988/obsidian_zhangmengqi.git",
+  "gitLocation": "",
+  "syncinterval": 60,
+  "isSyncOnLoad": false,
+  "checkStatusOnLoad": true,
+  "noticeLevel": "ALL",
+  "showSyncSuccessNotice": true
+}

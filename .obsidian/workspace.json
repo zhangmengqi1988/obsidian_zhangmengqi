@@ -11,13 +11,14 @@
             "id": "7673cf194f97d0d6",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "未命名.base",
-                "viewName": "表格"
+                "file": "2026-07-28.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "未命名"
+              "icon": "lucide-file",
+              "title": "2026-07-28"
             }
           }
         ]
@@ -200,7 +201,11 @@
   },
   "active": "7673cf194f97d0d6",
   "lastOpenFiles": [
-    "欢迎.md",
-    "未命名.base"
+    "未命名 2.base",
+    "2026-07-28.md",
+    "未命名.canvas",
+    "未命名 1.base",
+    "未命名.base",
+    "欢迎.md"
   ]
 }
