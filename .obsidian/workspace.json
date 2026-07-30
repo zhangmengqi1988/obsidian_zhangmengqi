@@ -11,14 +11,13 @@
             "id": "7673cf194f97d0d6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "2026-07-28.md",
-                "mode": "source",
-                "source": false
+                "file": "未命名 4.base",
+                "viewName": "表格"
               },
-              "icon": "lucide-file",
-              "title": "2026-07-28"
+              "icon": "lucide-table",
+              "title": "未命名 4"
             }
           }
         ]
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2026-07-28.md",
+                "file": "未命名 4.base",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2026-07-28 的反向链接列表"
+              "title": "未命名 4 的反向链接列表"
             }
           },
           {
@@ -113,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2026-07-28.md",
+                "file": "未命名 4.base",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "2026-07-28 的出链列表"
+              "title": "未命名 4 的出链列表"
             }
           },
           {
@@ -156,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2026-07-28.md",
+                "file": "未命名 4.base",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2026-07-28 的大纲"
+              "title": "未命名 4 的大纲"
             }
           }
         ]
@@ -188,16 +187,18 @@
   },
   "active": "7673cf194f97d0d6",
   "lastOpenFiles": [
+    "未命名 3.base",
+    "未命名 1.base",
+    "未命名.canvas",
+    "欢迎.md",
     "大厂面试官连环追问跨库Join你的方案代价是什么.md",
+    "架构/数据基础概念.md",
+    "2026-07-28.md",
     "DDD概念与架构从分层到六边形整洁.md",
     "未命名 4.base",
     "未命名.base",
-    "架构/数据基础概念.md",
     "架构",
-    "未命名.canvas",
-    "未命名 3.base",
     "未命名 2.base",
-    "未命名 1.base",
     "wechat_img_1785209872397_330.jpg",
     "wechat_img_1785209872379_56.jpg",
     "wechat_img_1785209872359_577.jpg",
@@ -207,8 +208,6 @@
     "wechat_img_1785209863536_387.jpg",
     "wechat_img_1785209863525_89.jpg",
     "wechat_img_1785209863506_393.jpg",
-    "wechat_img_1785209863493_625.jpg",
-    "2026-07-28.md",
-    "欢迎.md"
+    "wechat_img_1785209863493_625.jpg"
   ]
 }
