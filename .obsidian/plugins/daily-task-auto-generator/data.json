@@ -1,0 +1,15 @@
+{
+  "rootDir": "DailyTasks",
+  "autoGenerateMode": "daily",
+  "language": "auto",
+  "fileGenerationMode": "monthly",
+  "dailyFilePrefix": "",
+  "templateZh": "# {{dateWithIcon}}| {{weekday}}\n\n### 🧘 今日计划\n---\n\n- [ ] 冥想 10 分钟  \n- [ ] 复盘前一日计划  \n- [ ] 阅读 20 页书\n\n### 📝 工作任务\n---\n\n- [ ] 整理今日工作计划\n- [ ] 完成重要项目进度\n",
+  "templateEn": "# {{dateWithIcon}}| {{weekday}}\n\n### 🧘 Today's Plan\n---\n\n- [ ] Meditate for 10 minutes  \n- [ ] Review yesterday's plan  \n- [ ] Read 20 pages\n\n### 📝 Work Tasks\n---\n\n- [ ] Organize today's work schedule\n- [ ] Progress on important projects\n",
+  "customTemplate": "# {{dateWithIcon}}| {{weekday}}\n\n### 🧘 今日计划\n---\n\n- [ ] 冥想 10 分钟  \n- [ ] 复盘前一日计划  \n- [ ] 阅读 20 页书\n- [ ] 锻炼\n\n### 📝 工作任务\n---\n\n- [ ] 整理今日工作计划\n- [ ] 完成重要项目进度\n\n### 🧘 复盘\n- [ ] 总结 \n",
+  "hasCustomTemplate": true,
+  "taskStatistics": false,
+  "statisticsMaxSuggestions": 5,
+  "statisticsIncludeWeekends": true,
+  "successNotificationDuration": 3000
+}
