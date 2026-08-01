@@ -1,0 +1,267 @@
+{
+  "main": {
+    "id": "71bfb738d39abcf7",
+    "type": "split",
+    "children": [
+      {
+        "id": "947462b9a3f438ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7673cf194f97d0d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-07-28.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-07-28"
+            }
+          },
+          {
+            "id": "d9c1e7af47c05679",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "大厂面试官连环追问跨库Join你的方案代价是什么.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "大厂面试官连环追问跨库Join你的方案代价是什么"
+            }
+          },
+          {
+            "id": "3e02874cb2e4086e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DailyTasks/2026/7月.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "7月"
+            }
+          },
+          {
+            "id": "dc65c3725656f361",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DailyTasks/2026/8月.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "8月"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "47401f9d0ce32659",
+    "type": "split",
+    "children": [
+      {
+        "id": "7825924c3f384271",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "794d47ed45cba3ce",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "26d42c040f71d00e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "85b80b51078d2906",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3cfbd806e2d4f7b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "2772d2dfe87de0ef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "801b9247ad0bc686",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "未命名.base",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "未命名 的反向链接列表"
+            }
+          },
+          {
+            "id": "160e61368095fa39",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "未命名.base",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "未命名 的出链列表"
+            }
+          },
+          {
+            "id": "6b858afbaccf26f1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "6fddcea11dc475b1",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "e6f75fcf7c7857f9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "DailyTasks/2026/8月.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "github-sync:Sync with Remote": false,
+      "star-notebooklm:Send to NotebookLM": false,
+      "star-notebooklm:Open NotebookLM": false
+    }
+  },
+  "active": "dc65c3725656f361",
+  "lastOpenFiles": [
+    "DailyTasks/2026/7月.md",
+    "DailyTasks/2026/8月.md",
+    "从0到1建设美团数据库容量评估系统.md",
+    "wechat_img_1785487915758_484.jpg",
+    "wechat_img_1785487915541_350.jpg",
+    "wechat_img_1785487915324_67.jpg",
+    "wechat_img_1785487914974_285.jpg",
+    "wechat_img_1785487914742_191.jpg",
+    "wechat_img_1785487914397_273.jpg",
+    "wechat_img_1785487914113_641.jpg",
+    "wechat_img_1785487913932_489.jpg",
+    "wechat_img_1785487913397_126.jpg",
+    "wechat_img_1785487913065_54.jpg",
+    "2026-07-29.md",
+    "2026-07-28.md",
+    "未命名 4.base",
+    "架构/数据基础概念.md",
+    "DailyTasks/2026",
+    "DailyTasks",
+    "大厂面试官连环追问跨库Join你的方案代价是什么.md",
+    "未命名 3.base",
+    "未命名 2.base",
+    "未命名 1.base",
+    "未命名.canvas",
+    "未命名.base",
+    "DDD概念与架构从分层到六边形整洁.md",
+    "欢迎.md",
+    "架构",
+    "数据基础概念.canvas",
+    "日复盘/未命名.md"
+  ]
+}
