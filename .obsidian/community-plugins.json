@@ -2,5 +2,6 @@
   "github-sync",
   "messager",
   "daily-task-auto-generator",
-  "star-notebooklm"
+  "star-notebooklm",
+  "obsidian-local-rest-api"
 ]
