@@ -19,8 +19,23 @@
               "icon": "lucide-table",
               "title": "未命名 4"
             }
+          },
+          {
+            "id": "f5c3c2cacc2abb4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "未命名.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "未命名"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "未命名 4.base",
+                "file": "未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "未命名 4 的反向链接列表"
+              "title": "未命名 的反向链接列表"
             }
           },
           {
@@ -112,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "未命名 4.base",
+                "file": "未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "未命名 4 的出链列表"
+              "title": "未命名 的出链列表"
             }
           },
           {
@@ -155,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名 4.base",
+                "file": "未命名.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 4 的大纲"
+              "title": "未命名 的大纲"
             }
           }
         ]
@@ -185,8 +200,31 @@
       "odaily:Open Odaily sidebar": false
     }
   },
-  "active": "7673cf194f97d0d6",
+  "active": "f5c3c2cacc2abb4f",
   "lastOpenFiles": [
+    "未命名 4.base",
+    "未命名.md",
+    "架构/大厂面试官连环追问跨库Join你的方案代价是什么.md",
+    "架构/从0到1建设美团数据库容量评估系统.md",
+    "架构/Untitled.md",
+    "架构/DDD概念与架构从分层到六边形整洁.md",
+    "架构/-video-screenshots.base",
+    "架构/-video-screenshots-without-notes.base",
+    "架构/-hovernotes.base",
+    "wechat_img_1785487915758_484.jpg",
+    "wechat_img_1785487915541_350.jpg",
+    "wechat_img_1785487915324_67.jpg",
+    "wechat_img_1785487914974_285.jpg",
+    "wechat_img_1785487914742_191.jpg",
+    "wechat_img_1785487914397_273.jpg",
+    "wechat_img_1785487914113_641.jpg",
+    "wechat_img_1785487913932_489.jpg",
+    "wechat_img_1785487913397_126.jpg",
+    "wechat_img_1785487913065_54.jpg",
+    "DailyTasks/2026/8月.md",
+    "Clippings/Bilibili/2026-08-01-【硬核】官宦世家的不传之秘，为什么圣人的书拿来办事百无一用？.md",
+    "Clippings/Bilibili",
+    "Clippings",
     "DailyTasks/2026/7月.md",
     "DailyTasks/2026",
     "DailyTasks",
@@ -198,20 +236,6 @@
     "大厂面试官连环追问跨库Join你的方案代价是什么.md",
     "架构/数据基础概念.md",
     "2026-07-28.md",
-    "DDD概念与架构从分层到六边形整洁.md",
-    "未命名 4.base",
-    "未命名.base",
-    "架构",
-    "未命名 2.base",
-    "wechat_img_1785209872397_330.jpg",
-    "wechat_img_1785209872379_56.jpg",
-    "wechat_img_1785209872359_577.jpg",
-    "wechat_img_1785209872345_685.jpg",
-    "wechat_img_1785209872330_216.jpg",
-    "wechat_img_1785209863554_408.jpg",
-    "wechat_img_1785209863536_387.jpg",
-    "wechat_img_1785209863525_89.jpg",
-    "wechat_img_1785209863506_393.jpg",
-    "wechat_img_1785209863493_625.jpg"
+    "DDD概念与架构从分层到六边形整洁.md"
   ]
 }
