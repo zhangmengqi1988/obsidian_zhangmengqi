@@ -209,9 +209,19 @@
               "icon": "lucide-list",
               "title": "大纲"
             }
+          },
+          {
+            "id": "23424637352efff8",
+            "type": "leaf",
+            "state": {
+              "type": "notebooklm-webview",
+              "state": {},
+              "icon": "book-open",
+              "title": "NotebookLM"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -231,8 +241,17 @@
       "star-notebooklm:Open NotebookLM": false
     }
   },
-  "active": "794d47ed45cba3ce",
+  "active": "23424637352efff8",
   "lastOpenFiles": [
+    "架构/Untitled.md.crswap",
+    "架构/Untitled.md",
+    "架构/-video-screenshots-without-notes.base.crswap",
+    "架构/-video-screenshots-without-notes.base",
+    "架构/-video-screenshots.base.crswap",
+    "架构/-video-screenshots.base",
+    "架构/-hovernotes.base.crswap",
+    "架构/-hovernotes.base",
+    "架构/hover-notes-images",
     "架构/从0到1建设美团数据库容量评估系统.md",
     "架构/数据基础概念.md",
     "架构/大厂面试官连环追问跨库Join你的方案代价是什么.md",
@@ -254,16 +273,9 @@
     "2026-07-29.md",
     "2026-07-28.md",
     "未命名 4.base",
-    "DailyTasks/2026",
-    "DailyTasks",
-    "未命名 3.base",
-    "未命名 2.base",
-    "未命名 1.base",
     "未命名.canvas",
-    "未命名.base",
     "架构/DDD概念与架构从分层到六边形整洁.md",
     "欢迎.md",
-    "架构",
     "数据基础概念.canvas",
     "日复盘/未命名.md"
   ]
