@@ -40,12 +40,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名 2.md",
+                "file": "DailyTasks/2026/8月.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名 2"
+              "title": "8月"
             }
           }
         ],
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "未命名 2.md",
+                "file": "DailyTasks/2026/8月.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "未命名 2 的反向链接列表"
+              "title": "8月 的反向链接列表"
             }
           },
           {
@@ -141,12 +141,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "未命名 2.md",
+                "file": "DailyTasks/2026/8月.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "未命名 2 的出链列表"
+              "title": "8月 的出链列表"
             }
           },
           {
@@ -184,13 +184,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名 2.md",
+                "file": "DailyTasks/2026/8月.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 2 的大纲"
+              "title": "8月 的大纲"
             }
           }
         ]
@@ -216,9 +216,9 @@
   },
   "active": "300f31b5b6b84df2",
   "lastOpenFiles": [
+    "未命名 2.md",
     "Clippings/Bilibili/官宦世家的不传之秘.md",
     "DailyTasks/2026/8月.md",
-    "未命名 2.md",
     "wechat_img_1785487914742_191.jpg",
     "wechat_img_1785487914397_273.jpg",
     "wechat_img_1785487914113_641.jpg",
