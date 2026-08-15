@@ -68,12 +68,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DailyTasks/2026/8月.md",
+                "file": "Clippings/手捏一个 vibe coding 面试专用方法论.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "8月"
+              "title": "手捏一个 vibe coding 面试专用方法论"
             }
           }
         ],
@@ -150,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DailyTasks/2026/8月.md",
+                "file": "Clippings/手捏一个 vibe coding 面试专用方法论.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +160,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "8月 的反向链接列表"
+              "title": "手捏一个 vibe coding 面试专用方法论 的反向链接列表"
             }
           },
           {
@@ -169,12 +169,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DailyTasks/2026/8月.md",
+                "file": "Clippings/手捏一个 vibe coding 面试专用方法论.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "8月 的出链列表"
+              "title": "手捏一个 vibe coding 面试专用方法论 的出链列表"
             }
           },
           {
@@ -212,13 +212,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DailyTasks/2026/8月.md",
+                "file": "Clippings/手捏一个 vibe coding 面试专用方法论.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "8月 的大纲"
+              "title": "手捏一个 vibe coding 面试专用方法论 的大纲"
             }
           }
         ]
@@ -244,10 +244,14 @@
   },
   "active": "15feca53000c1b8c",
   "lastOpenFiles": [
+    "Clippings/高志凯谈判课 全56讲 2.md",
+    "Clippings/手捏一个 vibe coding 面试专用方法论.md",
+    "Clippings/高志凯谈判课 全56讲 1.md",
+    "Clippings/高志凯谈判课 全56讲.md",
+    "DailyTasks/2026/8月.md",
     "Clippings/为什么你转AI简历石沉大海？缺的不是理论，是Agent工程能力.md",
     "package-lock.json",
     "DailyTasks/2026/7月.md",
-    "DailyTasks/2026/8月.md",
     "未命名 4.md",
     "未命名 3.md",
     "Clippings/Bilibili/_clean_preview.txt",
