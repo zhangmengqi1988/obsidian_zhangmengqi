@@ -47,9 +47,37 @@
               "icon": "lucide-file",
               "title": "高志凯谈判课 全56讲 2"
             }
+          },
+          {
+            "id": "d70acd94aa23c6d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "未命名 6.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "未命名 6"
+            }
+          },
+          {
+            "id": "98b3d240c62e0864",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DailyTasks/2026/8月.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "8月"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -213,11 +241,16 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
-      "github-sync:Sync with Remote": false
+      "github-sync:Sync with Remote": false,
+      "media-extended:打开媒体库": false,
+      "media-extended:打开媒体快速切换器": false
     }
   },
-  "active": "6992e94537321fd3",
+  "active": "98b3d240c62e0864",
   "lastOpenFiles": [
+    "未命名 7.md",
+    "未命名 6.md",
+    "Clippings/高志凯谈判课 全56讲 2.md",
     "Clippings/Bilibili/官宦世家的不传之秘.md",
     "红利估值的误区99的人都搞错了简单说红利10.md",
     "未命名 5.md",
@@ -239,7 +272,6 @@
     "wechat_img_1787056531589_591.jpg",
     "wechat_img_1787056531440_848.jpg",
     "wechat_img_1787056531306_146.jpg",
-    "Clippings/高志凯谈判课 全56讲 2.md",
     "Clippings/高志凯谈判课 全56讲 1.md",
     "Clippings/为什么你转AI简历石沉大海？缺的不是理论，是Agent工程能力.md",
     "架构/从0到1建设美团数据库容量评估系统.md",
@@ -260,10 +292,8 @@
     "架构/-hovernotes.base",
     "Clippings/Bilibili",
     "Clippings",
-    "DailyTasks/2026/7月.md",
     "DailyTasks/2026",
     "DailyTasks",
-    "2026-07-29.md",
     "未命名.canvas"
   ]
 }
