@@ -124,12 +124,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名 5.md",
+                "file": "DailyTasks/2026/8月.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名 5"
+              "title": "8月"
             }
           }
         ],
@@ -153,7 +153,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -286,6 +288,10 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "star-notebooklm:Send to NotebookLM": false,
+      "star-notebooklm:Open NotebookLM": false,
+      "media-extended:打开媒体库": false,
+      "media-extended:打开媒体快速切换器": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -293,17 +299,15 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
-      "github-sync:Sync with Remote": false,
-      "odaily:Open Odaily home": false,
-      "odaily:Open Odaily sidebar": false
+      "github-sync:Sync with Remote": false
     }
   },
-  "active": "794d47ed45cba3ce",
+  "active": "d898df4045b2ffcc",
   "lastOpenFiles": [
+    "未命名 5.md",
     "未命名 7.md",
     "未命名 6.md",
     "Clippings/医生、教师、工程师集体跌落：日本体面职业是如何崩塌的？解读《以日为鉴》原作：分析师boden.md",
-    "未命名 5.md",
     "一文看懂清结算模块设计从业务需求和设计落地.md",
     "不做老好人三步打造有效人脉关系.md",
     "wechat_img_1787056531589_591.jpg",
