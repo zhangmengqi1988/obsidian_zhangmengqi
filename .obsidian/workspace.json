@@ -145,9 +145,23 @@
               "icon": "lucide-file",
               "title": "9月"
             }
+          },
+          {
+            "id": "be24349a92137cda",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "学习/中级思考力/框架思维.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "框架思维"
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -316,27 +330,33 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "cba957232a1af401",
+  "active": "be24349a92137cda",
   "lastOpenFiles": [
-    "吃透SpringBoot自动装配的核心原理约定大于配置30版本.md",
+    "Pasted image 20260904095835.png",
+    "Pasted image 20260904095522.png",
+    "Pasted image 20260904095431.png",
+    "Pasted image 20260904093841.png",
+    "Pasted image 20260904093201.png",
     "DailyTasks/2026/9月.md",
+    "学习/中级思考力/框架思维.md",
+    "学习/中级思考力",
+    "学习",
+    "未命名 8.md",
+    "未命名 5.md",
+    "请设计一个Java项目组件SpringBootStarter全解析与案例应用建议收藏.md",
+    "wechat_img_1788177250653_306.jpg",
+    "wechat_img_1788177250447_229.jpg",
+    "wechat_img_1788177250284_1.jpg",
+    "吃透SpringBoot自动装配的核心原理约定大于配置30版本.md",
     "DailyTasks/2026/8月.md",
     "wechat_img_1788246812087_688.jpg",
     "wechat_img_1788246811980_991.jpg",
     "wechat_img_1788246811785_586.jpg",
-    "wechat_img_1788246811448_607.jpg",
-    "未命名 5.md",
     "未命名 7.md",
     "未命名 6.md",
     "Clippings/医生、教师、工程师集体跌落：日本体面职业是如何崩塌的？解读《以日为鉴》原作：分析师boden.md",
     "一文看懂清结算模块设计从业务需求和设计落地.md",
     "不做老好人三步打造有效人脉关系.md",
-    "wechat_img_1787056531589_591.jpg",
-    "wechat_img_1787056531440_848.jpg",
-    "wechat_img_1787056531306_146.jpg",
-    "wechat_img_1787056531153_116.jpg",
-    "wechat_img_1787056531026_526.jpg",
-    "wechat_img_1787056530899_177.jpg",
     "红利估值的误区99的人都搞错了简单说红利10.md",
     "做支付系统要注意的几个技术决策.md",
     "Clippings/手捏一个 vibe coding 面试专用方法论.md",
@@ -352,18 +372,12 @@
     "未命名 2.md",
     "Clippings/Bilibili/官宦世家的不传之秘.md",
     "未命名 1.md",
-    "未命名.md",
     "未命名 4.base",
-    "架构/大厂面试官连环追问跨库Join你的方案代价是什么.md",
-    "架构/从0到1建设美团数据库容量评估系统.md",
-    "架构/Untitled.md",
     "架构/-video-screenshots.base",
     "架构/-video-screenshots-without-notes.base",
     "架构/-hovernotes.base",
     "Clippings/Bilibili",
     "Clippings",
-    "DailyTasks/2026",
-    "DailyTasks",
     "未命名.canvas"
   ]
 }
