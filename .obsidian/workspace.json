@@ -173,9 +173,23 @@
               "icon": "lucide-file",
               "title": "顽主杯大神比赛找感觉：周期论1（位置、逻辑）"
             }
+          },
+          {
+            "id": "641fef0ebdc2ff31",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "从128只红利基金中精选15只分红频率和估值水平一次看清.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "从128只红利基金中精选15只分红频率和估值水平一次看清"
+            }
           }
         ],
-        "currentTab": 11
+        "currentTab": 12
       }
     ],
     "direction": "vertical"
@@ -344,26 +358,27 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d32ed3fc58a85413",
+  "active": "641fef0ebdc2ff31",
   "lastOpenFiles": [
-    "SpringBoot4终于原生支持API版本控制了我把项目里那套v1v2重新改了一遍.md",
     "Clippings/顽主杯大神比赛找感觉：周期论1（位置、逻辑）.md",
+    "从128只红利基金中精选15只分红频率和估值水平一次看清.md",
+    "wechat_img_1789118044966_130.jpg",
+    "wechat_img_1789118044908_414.jpg",
+    "wechat_img_1789118044709_55.jpg",
+    "wechat_img_1789118044603_79.jpg",
+    "wechat_img_1789118044469_543.jpg",
+    "wechat_img_1789118044427_926.jpg",
+    "wechat_img_1789118044285_839.jpg",
+    "SpringBoot4终于原生支持API版本控制了我把项目里那套v1v2重新改了一遍.md",
     "Clippings/Matt Pocock 直播实战：Wayfinder 从想法到 spec 全流程.md",
     "wechat_img_1789026422414_812.jpg",
     "学习/AI使用/matt AI编程.md",
     "Pasted image 20260909153325.png",
     "Pasted image 20260909151718.png",
-    "Pasted image 20260909151627.png",
     "DailyTasks/2026/9月.md",
     "学习/AI使用",
     "学习/中级思考力/框架.md",
-    "Pasted image 20260905165356.png",
     "学习/中级思考力/框架思维.md",
-    "Pasted image 20260905155304.png",
-    "Pasted image 20260905152314.png",
-    "Pasted image 20260905151558.png",
-    "Pasted image 20260905110136.png",
-    "Pasted image 20260905105724.png",
     "学习/中级思考力",
     "学习",
     "未命名 8.md",
@@ -385,7 +400,6 @@
     "Clippings/为什么你转AI简历石沉大海？缺的不是理论，是Agent工程能力.md",
     "package-lock.json",
     "DailyTasks/2026/7月.md",
-    "未命名 4.md",
     "Clippings/Bilibili/_clean_preview.txt",
     "未命名 4.base",
     "架构/-video-screenshots.base",
