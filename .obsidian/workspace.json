@@ -166,30 +166,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/顽主杯大神比赛找感觉：周期论1（位置、逻辑）.md",
+                "file": "学习/股票理论/牵牛/道氏理论/道氏理论.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "顽主杯大神比赛找感觉：周期论1（位置、逻辑）"
-            }
-          },
-          {
-            "id": "641fef0ebdc2ff31",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Clippings/AI时代，如何让自己越活越值钱？——对话《令人心动的ffer》带教律师史欣悦.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "AI时代，如何让自己越活越值钱？——对话《令人心动的ffer》带教律师史欣悦"
+              "title": "道氏理论"
             }
           }
         ],
-        "currentTab": 12
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -358,22 +344,29 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "641fef0ebdc2ff31",
+  "active": "d32ed3fc58a85413",
   "lastOpenFiles": [
-    "Clippings/真正不缺钱的人，都做对了一件事——对话74岁台湾商业大佬金惟纯.md",
-    "Clippings/AI时代，如何让自己越活越值钱？——对话《令人心动的ffer》带教律师史欣悦.md",
-    "Pasted image 20260914192849.png",
-    "Pasted image 20260914190914.png",
-    "Pasted image 20260914190819.png",
-    "从128只红利基金中精选15只分红频率和估值水平一次看清.md",
+    "Pasted image 20260915152453.png",
+    "Pasted image 20260915151514.png",
+    "Pasted image 20260915151135.png",
+    "Pasted image 20260915150842.png",
+    "Pasted image 20260915150820.png",
+    "Pasted image 20260915150052.png",
+    "Pasted image 20260915150035.png",
+    "Pasted image 20260915145417.png",
+    "Pasted image 20260915144812.png",
+    "Pasted image 20260915144755.png",
     "Clippings/顽主杯大神比赛找感觉：周期论1（位置、逻辑）.md",
-    "wechat_img_1789118044966_130.jpg",
-    "wechat_img_1789118044908_414.jpg",
-    "wechat_img_1789118044709_55.jpg",
-    "wechat_img_1789118044603_79.jpg",
-    "wechat_img_1789118044469_543.jpg",
-    "wechat_img_1789118044427_926.jpg",
-    "wechat_img_1789118044285_839.jpg",
+    "Clippings/AI时代，如何让自己越活越值钱？——对话《令人心动的ffer》带教律师史欣悦.md",
+    "学习/股票理论/牵牛/道氏理论/道氏理论.md",
+    "学习/股票理论/牵牛/道氏理论",
+    "学习/股票理论/牵牛/未命名.md",
+    "学习/股票理论/牵牛",
+    "学习/股票理论/未命名.md",
+    "学习/股票理论",
+    "Clippings/真正不缺钱的人，都做对了一件事——对话74岁台湾商业大佬金惟纯.md",
+    "Pasted image 20260914192849.png",
+    "从128只红利基金中精选15只分红频率和估值水平一次看清.md",
     "SpringBoot4终于原生支持API版本控制了我把项目里那套v1v2重新改了一遍.md",
     "Clippings/Matt Pocock 直播实战：Wayfinder 从想法到 spec 全流程.md",
     "学习/AI使用/matt AI编程.md",
@@ -395,17 +388,10 @@
     "不做老好人三步打造有效人脉关系.md",
     "红利估值的误区99的人都搞错了简单说红利10.md",
     "做支付系统要注意的几个技术决策.md",
-    "Clippings/手捏一个 vibe coding 面试专用方法论.md",
-    "Clippings/高志凯谈判课 全56讲 2.md",
-    "Clippings/高志凯谈判课 全56讲 1.md",
-    "Clippings/高志凯谈判课 全56讲.md",
     "package-lock.json",
     "Clippings/Bilibili/_clean_preview.txt",
     "未命名 4.base",
     "架构/-video-screenshots.base",
-    "架构/-video-screenshots-without-notes.base",
-    "架构/-hovernotes.base",
-    "Clippings/Bilibili",
     "未命名.canvas"
   ]
 }
