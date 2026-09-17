@@ -312,13 +312,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名 5.md",
+                "file": "Clippings/✅大模型微调的方法 · 云效 Thoughts · 企业级知识库.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 5 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -332,7 +332,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -355,7 +355,7 @@
       "copilot:Open Copilot Agent Chat": false
     }
   },
-  "active": "ae8b79377d4aae22",
+  "active": "e6f75fcf7c7857f9",
   "lastOpenFiles": [
     "copilot/copilot-conversations/agent__帮我分析这篇文章，通过讲故事的方式引导我理解微调@20260917_155246.md",
     "copilot/copilot-conversations/agent__帮我分析这篇文章，通过讲故事的方式引导我理解微调@20260917_155117.md",

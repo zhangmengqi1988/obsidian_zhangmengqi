@@ -500,7 +500,3 @@ y = (W + BA)x
 | **Prefix Tuning** | \- | 在输入层或隐藏层前添加可训练的连续向量。 | 仅需存储少量前缀参数。 | 占用一部分上下文长度（Input Token）。 | 自然语言生成任务（NLG）。 |
 | **Prompt Tuning** | \- | 在输入端添加可学习的 Soft Prompt 向量。 | 极其节省参数（万分之一左右）。 | 对模型规模有要求，小模型效果差，收敛慢。 | 超大规模模型（千亿级）的多任务适配。 |
 | **QLoRA** | Quantized LoRA | 将模型量化为 4-bit 后再进行 LoRA 微调。 | 显存需求极低，甚至能在消费级显卡微调大模型。 | 训练速度比标准 LoRA 稍慢。 | 硬件资源受限的情况。 |
-
-![](https://g.alicdn.com/aone-tb/thoughts-front/images/no-search-result.c0ec38f7.png)
-
-你可以将零散的思绪与文字先整理为草稿

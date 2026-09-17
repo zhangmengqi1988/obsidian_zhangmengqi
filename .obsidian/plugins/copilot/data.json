@@ -397,7 +397,7 @@
       "info": {
         "id": "default",
         "displayName": "Default (recommended)",
-        "description": "Use the default model (currently glm-5.2[1m])"
+        "description": "Use the default model (currently Opus 5 (1M context)) · $5/$25 per Mtok"
       },
       "configuredModelId": "14d9bf6a-1586-4c54-9f6c-7fb016714eca",
       "configuredAt": 1789631411301
@@ -405,29 +405,9 @@
     {
       "providerId": "9b2a4b16-af19-48f0-baf4-6819e1e4d495",
       "info": {
-        "id": "opus",
-        "displayName": "glm-5.2",
-        "description": "Custom Opus model"
-      },
-      "configuredModelId": "9b2bcef3-8c99-4a12-9a4c-ab82a626a3f2",
-      "configuredAt": 1789631411302
-    },
-    {
-      "providerId": "9b2a4b16-af19-48f0-baf4-6819e1e4d495",
-      "info": {
-        "id": "fable",
-        "displayName": "deepseek-v4-pro-0813",
-        "description": "Custom Fable model"
-      },
-      "configuredModelId": "05732c68-2f34-42e7-b081-26e83309a4c0",
-      "configuredAt": 1789631411302
-    },
-    {
-      "providerId": "9b2a4b16-af19-48f0-baf4-6819e1e4d495",
-      "info": {
         "id": "sonnet",
-        "displayName": "qwen3.8-flash",
-        "description": "Custom Sonnet model"
+        "displayName": "Sonnet",
+        "description": "Sonnet 5 · Efficient for routine tasks · $3/$15 per Mtok"
       },
       "configuredModelId": "fb581757-e522-4de2-8828-f32a0c64c8d5",
       "configuredAt": 1789631411303
@@ -436,19 +416,37 @@
       "providerId": "9b2a4b16-af19-48f0-baf4-6819e1e4d495",
       "info": {
         "id": "haiku",
-        "displayName": "deepseek-v4-flash-0731",
+        "displayName": "deepseek-v4-flash",
         "description": "Custom Haiku model"
       },
       "configuredModelId": "844ba25e-1163-4bc6-9708-1ad8d850b55c",
       "configuredAt": 1789631411303
+    },
+    {
+      "providerId": "9b2a4b16-af19-48f0-baf4-6819e1e4d495",
+      "info": {
+        "id": "opus[1m]",
+        "displayName": "Opus (1M context)",
+        "description": "Opus 5 with 1M context · Best for everyday, complex tasks · $5/$25 per Mtok"
+      },
+      "configuredModelId": "1d25aa29-bfb3-4801-bf10-30dd1c6b125c",
+      "configuredAt": 1789637338556
+    },
+    {
+      "providerId": "9b2a4b16-af19-48f0-baf4-6819e1e4d495",
+      "info": {
+        "id": "sonnet[1m]",
+        "displayName": "Sonnet 5 (1M context)",
+        "description": "Sonnet 5 for long sessions · $3/$15 per Mtok"
+      },
+      "configuredModelId": "1fde39cc-9e05-49a0-a6f8-79df1875bc77",
+      "configuredAt": 1789637338556
     }
   ],
   "backends": {
     "claude": {
       "enabledModels": [
         "14d9bf6a-1586-4c54-9f6c-7fb016714eca",
-        "9b2bcef3-8c99-4a12-9a4c-ab82a626a3f2",
-        "05732c68-2f34-42e7-b081-26e83309a4c0",
         "fb581757-e522-4de2-8828-f32a0c64c8d5",
         "844ba25e-1163-4bc6-9708-1ad8d850b55c"
       ]
