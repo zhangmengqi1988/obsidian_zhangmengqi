@@ -1,12 +1,14 @@
 ---
-title: AI时代为什么必须懂分布式？MIT 6.824带你掌握大模型背后的系统架构与工程能力_哔哩哔哩_bilibili
-description: AI时代为什么必须懂分布式？MIT 6.824带你掌握大模型背后的系统架构与工程能力共计20条视频，包括：1_Introduction、2_RPC and Threads、3_GFS等，UP主更多精彩视频，请关注UP账号。
-author: AI中英文字幕课程
-source: https://www.bilibili.com/video/BV1uD3v6LER1/?spm_id_from=333.1007.tianma.1-2-2.click&vd_source=f6e401a2285124f0171b20a22d0b87be
-created: "2026-08-01"
-tags:
-  - hover-notes
-  - bilibili
+type: source
+title: MIT 6.824 分布式系统
+source_title: AI时代为什么必须懂分布式？MIT 6.824带你掌握大模型背后的系统架构与工程能力
+source: https://www.bilibili.com/video/BV1uD3v6LER1/
+source_type: B站视频
+author: [AI中英文字幕课程]
+published: 2026-08-01
+captured: 2026-08-01
+tags: [clippings, bilibili, 分布式]
+raw: "https://www.bilibili.com/video/BV1uD3v6LER1/"
 ---
 
 ### Distributed System Concepts
