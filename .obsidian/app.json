@@ -1,5 +1,7 @@
 {
   "showLineNumber": false,
   "attachmentFolderPath": "原始资料/附件",
-  "userIgnoreFilters": ["docs/"]
+  "userIgnoreFilters": [
+    "docs/"
+  ]
 }
