@@ -166,12 +166,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习/股票理论/牵牛/道氏理论/道氏理论.md",
+                "file": "Clippings/✅大模型微调的方法 · 云效 Thoughts · 企业级知识库.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "道氏理论"
+              "title": "✅大模型微调的方法 · 云效 Thoughts · 企业级知识库"
             }
           }
         ],
@@ -320,13 +320,23 @@
               "icon": "lucide-list",
               "title": "未命名 5 的大纲"
             }
+          },
+          {
+            "id": "ae8b79377d4aae22",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-agent-chat-view",
+              "state": {},
+              "icon": "copilot-agent",
+              "title": "Copilot Agent"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 949.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -341,11 +351,43 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
-      "github-sync:Sync with Remote": false
+      "github-sync:Sync with Remote": false,
+      "copilot:Open Copilot Agent Chat": false
     }
   },
-  "active": "d32ed3fc58a85413",
+  "active": "ae8b79377d4aae22",
   "lastOpenFiles": [
+    "copilot/copilot-conversations/agent__帮我分析这篇文章，通过讲故事的方式引导我理解微调@20260917_155246.md",
+    "copilot/copilot-conversations/agent__帮我分析这篇文章，通过讲故事的方式引导我理解微调@20260917_155117.md",
+    "copilot/copilot-conversations",
+    "copilot/skills/obsidian-cli/SKILL.md",
+    "copilot/skills/obsidian-cli/LICENSE",
+    "copilot/skills/obsidian-cli",
+    "copilot/skills/json-canvas/SKILL.md",
+    "copilot/skills/json-canvas/LICENSE",
+    "copilot/skills/json-canvas/references/EXAMPLES.md",
+    "copilot/skills/json-canvas/references",
+    "copilot/skills/json-canvas",
+    "copilot/skills/obsidian-bases/SKILL.md",
+    "copilot/skills/obsidian-bases/LICENSE",
+    "copilot/skills/obsidian-bases/references/EXAMPLES.md",
+    "copilot/skills/obsidian-bases/references/FUNCTIONS_REFERENCE.md",
+    "copilot/skills/obsidian-bases/references",
+    "copilot/skills/obsidian-bases",
+    "copilot/skills/obsidian-markdown/SKILL.md",
+    "copilot/skills/obsidian-markdown/LICENSE",
+    "copilot/skills/obsidian-markdown/references/PROPERTIES.md",
+    "copilot/skills/obsidian-markdown/references/EMBEDS.md",
+    "copilot/skills/obsidian-markdown/references/CALLOUTS.md",
+    "copilot/skills/openartifacts-publish/SKILL.md",
+    "copilot/skills/openartifacts-publish/themes/research-memo.md",
+    "copilot/skills/copilot-fetch-x/SKILL.md",
+    "copilot/skills/copilot-youtube-transcript/SKILL.md",
+    "copilot/skills/copilot-read-pdf/SKILL.md",
+    "copilot/skills/copilot-web-fetch/SKILL.md",
+    "copilot/skills/copilot-web-search/SKILL.md",
+    "学习/股票理论/牵牛/道氏理论/道氏理论.md",
+    "Clippings/✅大模型微调的方法 · 云效 Thoughts · 企业级知识库.md",
     "Pasted image 20260916085741.png",
     "Pasted image 20260915192535.png",
     "Pasted image 20260915192312.png",
@@ -356,42 +398,11 @@
     "Pasted image 20260915171854.png",
     "Pasted image 20260915170137.png",
     "Pasted image 20260915165530.png",
-    "Pasted image 20260915165242.png",
     "Clippings/顽主杯大神比赛找感觉：周期论1（位置、逻辑）.md",
     "Clippings/AI时代，如何让自己越活越值钱？——对话《令人心动的ffer》带教律师史欣悦.md",
-    "学习/股票理论/牵牛/道氏理论/道氏理论.md",
-    "学习/股票理论/牵牛/道氏理论",
     "学习/股票理论/牵牛/未命名.md",
-    "学习/股票理论/牵牛",
     "学习/股票理论/未命名.md",
-    "学习/股票理论",
     "Clippings/真正不缺钱的人，都做对了一件事——对话74岁台湾商业大佬金惟纯.md",
-    "从128只红利基金中精选15只分红频率和估值水平一次看清.md",
-    "SpringBoot4终于原生支持API版本控制了我把项目里那套v1v2重新改了一遍.md",
-    "Clippings/Matt Pocock 直播实战：Wayfinder 从想法到 spec 全流程.md",
-    "学习/AI使用/matt AI编程.md",
-    "DailyTasks/2026/9月.md",
-    "学习/AI使用",
-    "学习/中级思考力/框架.md",
-    "学习/中级思考力/框架思维.md",
-    "学习/中级思考力",
-    "学习",
-    "未命名 8.md",
-    "未命名 5.md",
-    "请设计一个Java项目组件SpringBootStarter全解析与案例应用建议收藏.md",
-    "吃透SpringBoot自动装配的核心原理约定大于配置30版本.md",
-    "DailyTasks/2026/8月.md",
-    "未命名 7.md",
-    "未命名 6.md",
-    "Clippings/医生、教师、工程师集体跌落：日本体面职业是如何崩塌的？解读《以日为鉴》原作：分析师boden.md",
-    "一文看懂清结算模块设计从业务需求和设计落地.md",
-    "不做老好人三步打造有效人脉关系.md",
-    "红利估值的误区99的人都搞错了简单说红利10.md",
-    "做支付系统要注意的几个技术决策.md",
-    "package-lock.json",
-    "Clippings/Bilibili/_clean_preview.txt",
-    "未命名 4.base",
-    "架构/-video-screenshots.base",
     "未命名.canvas"
   ]
 }
