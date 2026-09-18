@@ -735,7 +735,7 @@ git commit -m "feat: ingest 如何构建 LLM Wiki——摘要页、LLM Wiki 概�
 ### Task 6: lint 首跑与阶段验收
 
 **Files:**
-- Modify: `.claude/commands/lint.md`（仅 Step 0 的两处措辞收紧）
+- Modify: `.claude/commands/lint.md`（仅 Step 0 的「非页面文件」豁免统一，不碰检查项本身）
 - Create: `知识库/lint-report-2026-09-18.md`
 - Modify: `知识库/操作日志.md`（追加 lint 记录）
 - Modify: `知识库/索引.md`（仅当 lint 发现遗漏）
@@ -748,7 +748,7 @@ git commit -m "feat: ingest 如何构建 LLM Wiki——摘要页、LLM Wiki 概�
 
 Task 2 的审查发现措辞过宽，**每次 lint 都会产生假阳性**，必须先修再跑。根因不是某一项写错，
 而是**每一项各写各的豁免清单**，导致同族检查彼此不一致。所以本步不逐项打补丁，而是先把
-「非页面文件」定义一次，再让四项检查共同引用它。
+「非页面文件」定义一次，再让孤儿页／索引同步／frontmatter 三项检查共同引用它。
 
 **（0）先定义**，在 `lint.md` 的「检查项」标题下加一行：
 
@@ -812,9 +812,14 @@ for m in missing: print(' ', m)
 ```bash
 cd "D:/张梦奇ob"
 python -c "
-import re, glob, os
+import re, glob, os, fnmatch
+NONPAGE = ('索引.md', '操作日志.md', '综述.md')
+def is_page(p):
+    b = os.path.basename(p)
+    return b not in NONPAGE and not fnmatch.fnmatch(b, 'lint-report-*.md')
 pages, inbound = {}, {}
 for p in glob.glob('知识库/**/*.md', recursive=True):
+    if not is_page(p): continue
     name = os.path.splitext(os.path.basename(p))[0]
     pages[name] = p
     inbound.setdefault(name, set())
@@ -824,23 +829,23 @@ for p in glob.glob('知识库/**/*.md', recursive=True):
         link = link.strip().split('/')[-1]
         if link in pages: inbound.setdefault(link, set()).add(p)
 for n, p in sorted(pages.items()):
-    if n in ('索引','操作日志','综述'): continue
     if not inbound.get(n): print('ORPHAN:', n)
 print('done')
 "
 ```
-**期望：** 除 `索引`／`操作日志`／`综述` 外无输出。新页 `如何构建 LLM Wiki` 应被 `概念/LLM Wiki` 入链；`LLM Wiki` 应被摘要页与索引入链。
+**期望：** 除 `done` 外无输出（「非页面文件」按 Step 0 的定义整体排除）。新页 `如何构建 LLM Wiki` 应被 `概念/LLM Wiki` 入链；`LLM Wiki` 应被摘要页与索引入链——若这两条报了 ORPHAN，说明建页或入链漏了。
 
 - [ ] **Step 3: frontmatter 合规检查**
 
 ```bash
 cd "D:/张梦奇ob"
 python -c "
-import re, glob, os
+import re, glob, os, fnmatch
 REQ = ['title','tldr','type','status','created','updated']
+NONPAGE = ('索引.md','操作日志.md','综述.md')
 for p in glob.glob('知识库/**/*.md', recursive=True):
     n = os.path.basename(p)
-    if n in ('索引.md','操作日志.md','综述.md'): continue
+    if n in NONPAGE or fnmatch.fnmatch(n, 'lint-report-*.md'): continue
     t = open(p, encoding='utf-8').read()
     m = re.match(r'^---\n(.*?)\n---', t, re.S)
     if not m: print('NO FRONTMATTER:', p); continue
