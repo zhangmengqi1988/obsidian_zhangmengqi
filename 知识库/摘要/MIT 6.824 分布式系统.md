@@ -1,6 +1,7 @@
 ---
 type: source
 title: MIT 6.824 分布式系统
+tldr: MIT 分布式课导论讲义：以性能与容错为主线，并发带来的复杂性与部分失败是固有挑战，千台机器不保证千倍加速
 source_title: AI时代为什么必须懂分布式？MIT 6.824带你掌握大模型背后的系统架构与工程能力
 source: https://www.bilibili.com/video/BV1uD3v6LER1/
 source_type: B站视频
@@ -9,6 +10,9 @@ published: 2026-08-01
 captured: 2026-08-01
 tags: [clippings, bilibili, 分布式]
 raw: "https://www.bilibili.com/video/BV1uD3v6LER1/"
+status: draft
+created: 2026-08-01
+updated: 2026-09-18
 ---
 
 ### Distributed System Concepts

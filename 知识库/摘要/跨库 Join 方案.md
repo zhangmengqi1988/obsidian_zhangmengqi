@@ -1,6 +1,7 @@
 ---
 type: source
 title: 跨库 Join 方案
+tldr: 绑定表、广播表、冗余字段、应用层关联、数据异构五种关联方案的代价对比与强一致到最终一致的能力阶梯；没有银弹，按规模选型
 source_title: 大厂面试官连环追问：跨库Join，你的方案代价是什么？
 source: https://mp.weixin.qq.com/s/NlF__R3rJ9AZdGFrV1wvlQ
 source_type: 微信文章
@@ -9,6 +10,9 @@ published: 2026-07-28
 captured: 2026-07-28
 tags: [clippings, 数据库, 分布式]
 raw: "[[原始资料/剪藏/跨库 Join 方案]]"
+status: draft
+created: 2026-07-28
+updated: 2026-09-18
 ---
 
 以面试三连问（知道方案吗→绑定表用不了怎么办→代价是什么）为线索，系统对比分库分表后跨库 Join 的五种方案，核心结论：跨库 Join 的本质是用空间、约束或架构换回关联能力，每种方案都有必须讲清的代价。
