@@ -97,7 +97,6 @@ published: 2026-08-20
 captured: 2026-08-20
 tags: [clippings, 支付]
 raw: "[[原始资料/剪藏/清结算模块设计]]"
-confidence: high
 status: draft
 created: 2026-08-20
 updated: 2026-08-20
@@ -108,6 +107,9 @@ updated: 2026-08-20
 `raw: "[[原始资料/剪藏/清结算模块设计]]"`）；若该摘要页没有对应的本地文件
 （只有线上视频或网页），`raw` 直接写原始 URL 字符串，
 如 `raw: "https://www.bilibili.com/video/BV1uD3v6LER1/"`。
+
+`confidence` 只用于需要跨来源判断的页面类型（`concept`／`entity`／`synthesis`／`output`）。
+摘要页是来源的直接派生，不填 `confidence`。
 
 正文结构：一句话主旨 → 关键论点（3–7 条）→ 与其他资料的关系 → 值得追问的问题。
 
