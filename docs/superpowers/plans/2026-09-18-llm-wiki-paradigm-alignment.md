@@ -728,13 +728,26 @@ git commit -m "feat: ingest 如何构建 LLM Wiki——摘要页、LLM Wiki 概�
 ### Task 6: lint 首跑与阶段验收
 
 **Files:**
+- Modify: `.claude/commands/lint.md`（仅 Step 0 的两处措辞收紧）
 - Create: `知识库/lint-report-2026-09-18.md`
 - Modify: `知识库/操作日志.md`（追加 lint 记录）
 - Modify: `知识库/索引.md`（仅当 lint 发现遗漏）
 
 **Interfaces:**
 - Consumes: Task 0–5 的全部产物
-- Produces: 验收结论。通过后用户决定阶段 4（其余 20 篇剪藏的全量编译）
+- Produces: 验收结论。通过后用户决定阶段 4（其余 18 篇剪藏的全量编译）
+
+- [ ] **Step 0: 收紧 `lint.md` 的两处过宽措辞**
+
+Task 2 的审查发现两处措辞过宽，**每次 lint 都会产生假阳性**，必须先修再跑：
+
+**（a）`lint.md` 的「索引同步」检查项**现在写的是「`知识库/` 下所有 `.md` 是否都在 `索引.md` 中列出」。照字面执行会把 `操作日志.md` 自己和每次 lint 生成的 `lint-report-*.md` 都算作"漏登记"。改为：
+
+> - [ ] **索引同步**：`知识库/{摘要,概念,实体,综合,输出}/` 下的页面是否都在 `索引.md` 中列出（`索引.md`、`操作日志.md`、`综述.md`、`lint-report-*.md` 除外）
+
+**（b）「必填字段」检查项**现在写的是「每页是否有 `title`、`tldr`…」。CLAUDE.md 第五章明确豁免了 `索引.md`／`操作日志.md`／`综述.md`。同一份 lint 里「孤儿页」一项已经带了豁免，这一项漏了。改为：
+
+> - [ ] **必填字段**：每页是否有 `title`、`tldr`、`type`、`status`、`created`、`updated`（`索引.md`、`操作日志.md`、`综述.md` 除外）
 
 - [ ] **Step 1: 断链检查（两根解析）**
 
@@ -903,3 +916,16 @@ Task 1 的审查与协调者各自独立发现同一处缺陷，外加审查员�
 | 1 | **Task 4 覆盖面不足（计划缺陷）**。Task 1 把必填字段定为六个，但 4 个摘要页的 `tldr`／`status`／`created`／`updated` **一个都没有**；原 Task 4 只回填 `tldr`，Task 6 的 frontmatter 合规检查必然失败 | Task 4 扩为回填全部六个字段，Step 4 的验证脚本改为逐页检查六字段 |
 | 2 | **schema 自身两处欠定义（审查员发现）**。`sources` 定义说「本页依据的摘要页」，但 `output` 模板里填了概念页；`question` 被两个模板使用却全篇未定义 | Task 4 新增 Step 0，在 CLAUDE.md 里补齐 `sources` 取值范围、`question` 定义，并补全 `status` 四档中未定义的另外三档 |
 | 3 | **lint 能力丢失（审查员发现）**。上一版 CLAUDE.md 的 lint 清单含「`status: needs-review` 与 `confidence: low` 的积压」，Task 1 的六类检查里没有它的落点 | Task 2 的 `lint.md` 检查项补一条「积压」 |
+
+### 修订 2（2026-09-18，Task 2 完成后）
+
+Task 2 的审查发现 `lint.md` 有两处措辞照字面执行会**每次 lint 都误报**。两处都继承自本计划的
+原始简报措辞（非实现者偏离），但 Task 6 正是第一次真跑 lint，会在那里全部撞上。
+
+| # | 问题 | 修法 |
+|---|---|---|
+| 4 | 「索引同步」把 `操作日志.md` 与每轮的 `lint-report-*.md` 也算作漏登记 | Task 6 新增 Step 0(a)，把检查范围收窄到四个页面目录 |
+| 5 | 「必填字段」写「每页」，但 CLAUDE.md 第五章豁免了 `索引.md`／`操作日志.md`／`综述.md`；同份 lint 的孤儿页检查已带豁免，此处漏了 | Task 6 新增 Step 0(b)，补上豁免子句 |
+
+同时修正 Task 6 结尾的阶段 4 篇数：剪藏现为 22 篇，已 ingest 3 篇（阶段一）+ 1 篇（Task 5），
+**其余为 18 篇**而非原文所写的 20 篇。
