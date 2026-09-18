@@ -382,6 +382,7 @@ description: "知识库健康检查：查找孤儿页、断链、矛盾与缺失
 - [ ] **矛盾未标注**：是否有两页提出冲突结论但未用 `> [!contradiction]` callout 标注
 - [ ] **缺口未标明**：概念页/摘要页是否缺少反方观点或数据缺口说明
 - [ ] **stub 僵局**：`status: stub` 的页面是否长期未扩充
+- [ ] **积压**：`status: needs-review` 与 `confidence: low` 的页面是否长期未处理
 - [ ] **过时内容**：`updated` 超过 6 个月的页面
 
 **输出：**
@@ -506,7 +507,13 @@ git commit -m "refactor: 操作日志改为可 grep 的标题式格式"
 
 ### Task 4: 现有页面回填新字段
 
+> **计划修订 2026-09-18（Task 1 完成后）**：Task 1 把第五章的必填字段定为六个
+> （`title`/`tldr`/`type`/`status`/`created`/`updated`），但 4 个摘要页目前**这四个新字段一个都没有**。
+> 原 Task 4 只回填 `tldr`，会让 Task 6 的 frontmatter 合规检查必然失败。本任务因此扩为
+> **回填全部六个必填字段**，并追加 Step 0 补齐 schema 自身的两处欠定义。
+
 **Files:**
+- Modify: `CLAUDE.md`（仅 Step 0 的两处定义补齐）
 - Modify: `知识库/摘要/清结算模块设计.md`、`知识库/摘要/支付系统技术决策.md`、`知识库/摘要/跨库 Join 方案.md`、`知识库/摘要/MIT 6.824 分布式系统.md`
 - Modify: `知识库/概念/清结算.md`、`知识库/概念/支付网关.md`、`知识库/概念/跨库 Join.md`、`知识库/概念/分库分表.md`
 - Modify: `知识库/综述.md`
@@ -515,13 +522,34 @@ git commit -m "refactor: 操作日志改为可 grep 的标题式格式"
 - Consumes: Task 1 第五章的字段规范与第六章的 callout 语法
 - Produces: 8 个页面的 frontmatter 与 schema 一致；Task 6 的 lint 依赖此一致性
 
-- [ ] **Step 1: 给 8 个页面加 `tldr`**
+- [ ] **Step 0: 补齐 CLAUDE.md 的两处欠定义**
 
-每个 `tldr` **≤60 字**，且**与其在 `知识库/索引.md` 中已有的一行描述对齐**（索引条目的文字就是 tldr，不要出现两份互相打架的摘要）。
+Task 1 的审查发现两处：某个字段在模板里被用了，但第五章从没定义它。
 
-`tldr` 插在 `title` 之后、`type` 之后均可，**全库统一放在 `title` 下一行**。
+**（a）`sources` 的取值范围。** 第五章第 2 节的定义写的是「本页依据的摘要页」，但第五章第 4 节的 `output` 模板里 `sources` 填的是概念页 `[[支付网关]]`。两者矛盾。把定义改为：
 
-8 个页面各自的 `tldr` 内容：从 `知识库/索引.md` 中该页已有的一行描述**精简到 60 字以内**。索引里较长的描述可保留原样，但 `tldr` 必须是精简版；若索引描述本身已 ≤60 字则直接沿用。
+> | `sources` | 本页依据的页面（摘要页、概念页、实体页均可，不限摘要页） |
+
+**（b）`question` 字段。** `synthesis` 与 `output` 两个模板都用了 `question`，但全篇没有定义。在第五章第 4 节 `output` 模板之后补一句：
+
+> `question`：本页要回答的那个问题原文，用于让检索者判断这页是否对得上自己的问题。`type: output` 与 `type: synthesis` 必填。
+
+**（c）`status` 四档只定义了 `stub`。** 第五章第 5 节补全其余三档：
+
+> - `stub` —— 仅一个来源，只记定义与出处，等第二来源出现再扩写
+> - `draft` —— LLM 已写完，但用户尚未确认
+> - `stable` —— 用户已通读并确认
+> - `needs-review` —— 发现疑问或来源可能已过时，待查
+
+- [ ] **Step 1: 给 8 个页面补齐六个必填字段**
+
+每个页面检查 `title`、`tldr`、`type`、`status`、`created`、`updated` 六项，缺哪个补哪个。
+
+- `title`／`type`：8 页均已有，不动。
+- `tldr`：**新建**。≤60 字，且**与其在 `知识库/索引.md` 中已有的一行描述对齐**——索引条目的文字就是 tldr，不要出现两份互相打架的摘要。从索引里该页已有的一行描述精简到 60 字以内；若索引描述本身已 ≤60 字则直接沿用。统一插在 `title` 下一行。
+- `status`：8 页统一 `draft`（本次是 LLM 自行回填，用户尚未逐页确认；`stable` 留给用户确认后再改）。
+- `created`：摘要页取该页已有的 `captured` 值（即资料抓取日）；概念页保留各自已有的 `created: 2026-09-17`。
+- `updated`：8 页统一改为 `2026-09-18`（本次确实改了它们）。
 
 - [ ] **Step 2: 给 4 个概念页加 `related`**
 
@@ -536,8 +564,6 @@ git commit -m "refactor: 操作日志改为可 grep 的标题式格式"
 
 **先读每个页面正文确认这些关系在正文里确实存在**，若某条关系正文未提及则不要填（`related` 是实质关系，不是礼貌性互链）。
 
-同时把 4 个概念页的 `updated` 改为 `2026-09-18`。
-
 - [ ] **Step 3: 综述.md 的张力改 callout**
 
 把「一处张力（并列，不抹平）」小节下的正文，改为按第六章的 callout 语法呈现。要点：
@@ -549,16 +575,33 @@ git commit -m "refactor: 操作日志改为可 grep 的标题式格式"
 
 ```bash
 cd "D:/张梦奇ob"
-echo "--- 8 页均有 tldr ---"
-for f in "知识库/摘要"/*.md "知识库/概念"/*.md; do
-  printf "%s: " "$f"; grep -c "^tldr:" "$f"
-done
-echo "--- tldr 超 60 字检查 ---"
-grep -h "^tldr:" "知识库/摘要"/*.md "知识库/概念"/*.md | awk '{ if (length($0) > 66) print "TOO LONG: " $0 }'
+echo "--- 8 页六字段是否齐全（期望无 MISSING 行）---"
+python -c "
+import re, glob, os
+REQ = ['title','tldr','type','status','created','updated']
+for p in sorted(glob.glob('知识库/摘要/*.md') + glob.glob('知识库/概念/*.md')):
+    fm = re.match(r'^---\n(.*?)\n---', open(p, encoding='utf-8').read(), re.S)
+    if not fm: print('NO FRONTMATTER:', p); continue
+    miss = [k for k in REQ if not re.search(rf'^{k}:', fm.group(1), re.M)]
+    if miss: print('MISSING', miss, 'in', os.path.basename(p))
+print('field check done')
+"
+echo "--- tldr 超 60 字检查（按字符数，非字节）---"
+python -c "
+import re, glob, os
+for p in sorted(glob.glob('知识库/摘要/*.md') + glob.glob('知识库/概念/*.md')):
+    m = re.search(r'^tldr:\s*(.+)$', open(p, encoding='utf-8').read(), re.M)
+    if not m: continue
+    t = m.group(1).strip().strip('\"')
+    if len(t) > 60: print('TOO LONG', len(t), os.path.basename(p), t)
+print('tldr length done')
+"
 echo "--- callout ---"
 grep -n "\[!contradiction\]" "知识库/综述.md"
 ```
-**期望：** 8 个文件各 1 个 `tldr`；无 TOO LONG 输出（66 = 60 字 + `tldr: ` 前缀）；综述含 contradiction callout。
+**期望：** `field check done` 前无 MISSING/NO FRONTMATTER 行；`tldr length done` 前无 TOO LONG；综述含 contradiction callout。
+
+（用 Python 而非 `awk length()` 数字符——awk 按字节计，一个中文字算 3，会全部误报。）
 
 ⚠️ 中文字符在 awk `length()` 下可能按字节计数，若出现 TOO LONG 需人工核对是否为误报（一个中文字 3 字节）。
 
@@ -566,8 +609,8 @@ grep -n "\[!contradiction\]" "知识库/综述.md"
 
 ```bash
 cd "D:/张梦奇ob"
-git add "知识库/摘要" "知识库/概念" "知识库/综述.md"
-git commit -m "feat: 回填 tldr 与 related 字段，综述张力改用 contradiction callout"
+git add "CLAUDE.md" "知识库/摘要" "知识库/概念" "知识库/综述.md"
+git commit -m "feat: 补齐六个必填字段与 related，综述张力改用 contradiction callout"
 ```
 
 ---
@@ -846,3 +889,17 @@ git commit -m "chore: 范式对齐后首次 lint 与阶段验收"
 - `status` 取值 `stub|draft|stable|needs-review` 在 Task 1 第五章与 Task 2 Step 3 的 lint 检查项中一致
 - 目录名 `知识库/输出/` 在 Task 1、2、5、6 中一致
 - 日志格式 `## [YYYY-MM-DD] 动作 | 标题` 在 Task 1 第八章、Task 2 的 ingest/lint/save、Task 3、Task 5、Task 6 中一致
+
+---
+
+## 修订记录
+
+### 修订 1（2026-09-18，Task 1 完成后）
+
+Task 1 的审查与协调者各自独立发现同一处缺陷，外加审查员查到一处能力丢失。三处一并修正：
+
+| # | 问题 | 修法 |
+|---|---|---|
+| 1 | **Task 4 覆盖面不足（计划缺陷）**。Task 1 把必填字段定为六个，但 4 个摘要页的 `tldr`／`status`／`created`／`updated` **一个都没有**；原 Task 4 只回填 `tldr`，Task 6 的 frontmatter 合规检查必然失败 | Task 4 扩为回填全部六个字段，Step 4 的验证脚本改为逐页检查六字段 |
+| 2 | **schema 自身两处欠定义（审查员发现）**。`sources` 定义说「本页依据的摘要页」，但 `output` 模板里填了概念页；`question` 被两个模板使用却全篇未定义 | Task 4 新增 Step 0，在 CLAUDE.md 里补齐 `sources` 取值范围、`question` 定义，并补全 `status` 四档中未定义的另外三档 |
+| 3 | **lint 能力丢失（审查员发现）**。上一版 CLAUDE.md 的 lint 清单含「`status: needs-review` 与 `confidence: low` 的积压」，Task 1 的六类检查里没有它的落点 | Task 2 的 `lint.md` 检查项补一条「积压」 |
