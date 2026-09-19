@@ -479,7 +479,7 @@
         "displayName": "Kimi K2.6",
         "description": "Good for long-running reasoning tasks.",
         "toolCall": true,
-        "reasoning": false,
+        "reasoning": true,
         "reasoningEfforts": [],
         "modalities": {
           "input": [
