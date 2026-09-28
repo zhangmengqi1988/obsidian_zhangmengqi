@@ -363,7 +363,11 @@
   "agentMode": {
     "byok": {},
     "activeBackend": "claude",
-    "backends": {},
+    "backends": {
+      "claude": {
+        "defaultMode": "auto"
+      }
+    },
     "debugFullFrames": true,
     "notificationSound": true,
     "notificationSoundId": "piano",
