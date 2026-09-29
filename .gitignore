@@ -1,0 +1,9 @@
+# 第三方插件密钥，禁止入库
+.obsidian/plugins/messager/data.json
+
+# Obsidian 工作区状态（每次开关窗口都变，无版本价值）
+.obsidian/workspace.json
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
