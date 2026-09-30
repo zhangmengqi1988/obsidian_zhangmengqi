@@ -1,0 +1,425 @@
+{
+  "main": {
+    "id": "71bfb738d39abcf7",
+    "type": "split",
+    "children": [
+      {
+        "id": "947462b9a3f438ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7673cf194f97d0d6",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "未命名 4.base",
+                "viewName": "表格"
+              },
+              "icon": "lucide-table",
+              "title": "未命名 4"
+            }
+          },
+          {
+            "id": "f5c3c2cacc2abb4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DailyTasks/2026/8月.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "8月"
+            }
+          },
+          {
+            "id": "300f31b5b6b84df2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DailyTasks/2026/8月.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "8月"
+            }
+          },
+          {
+            "id": "6c5d9b969498ebfe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DailyTasks/2026/8月.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "8月"
+            }
+          },
+          {
+            "id": "15feca53000c1b8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Clippings/手捏一个 vibe coding 面试专用方法论.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "手捏一个 vibe coding 面试专用方法论"
+            }
+          },
+          {
+            "id": "8b1140871ba09036",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "做支付系统要注意的几个技术决策.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "做支付系统要注意的几个技术决策"
+            }
+          },
+          {
+            "id": "e3b7ec9f5ba62eba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "红利估值的误区99的人都搞错了简单说红利10.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "红利估值的误区99的人都搞错了简单说红利10"
+            }
+          },
+          {
+            "id": "19d9fe4dee49aa32",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "一文看懂清结算模块设计从业务需求和设计落地.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "一文看懂清结算模块设计从业务需求和设计落地"
+            }
+          },
+          {
+            "id": "d898df4045b2ffcc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "未命名 5.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "未命名 5"
+            }
+          },
+          {
+            "id": "2237e4bb85167aa7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "请设计一个Java项目组件SpringBootStarter全解析与案例应用建议收藏.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "请设计一个Java项目组件SpringBootStarter全解析与案例应用建议收藏"
+            }
+          },
+          {
+            "id": "439fad2793680eb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "架构设计积分系统.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "架构设计积分系统"
+            }
+          },
+          {
+            "id": "1ccd1a70cea75176",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "单点登录SSO原理详解CASOAuth2OIDC一次讲清.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "单点登录SSO原理详解CASOAuth2OIDC一次讲清"
+            }
+          },
+          {
+            "id": "abb2ddc0d1972ca9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "未命名.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "未命名"
+            }
+          },
+          {
+            "id": "2be73602205767f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "未命名 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "未命名 1"
+            }
+          }
+        ],
+        "currentTab": 13
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "47401f9d0ce32659",
+    "type": "split",
+    "children": [
+      {
+        "id": "7825924c3f384271",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "794d47ed45cba3ce",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "26d42c040f71d00e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "85b80b51078d2906",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3cfbd806e2d4f7b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "2772d2dfe87de0ef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "801b9247ad0bc686",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "请设计一个Java项目组件SpringBootStarter全解析与案例应用建议收藏.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "请设计一个Java项目组件SpringBootStarter全解析与案例应用建议收藏 的反向链接列表"
+            }
+          },
+          {
+            "id": "160e61368095fa39",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "请设计一个Java项目组件SpringBootStarter全解析与案例应用建议收藏.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "请设计一个Java项目组件SpringBootStarter全解析与案例应用建议收藏 的出链列表"
+            }
+          },
+          {
+            "id": "6b858afbaccf26f1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "6fddcea11dc475b1",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "e6f75fcf7c7857f9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "请设计一个Java项目组件SpringBootStarter全解析与案例应用建议收藏.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "请设计一个Java项目组件SpringBootStarter全解析与案例应用建议收藏 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "star-notebooklm:Send to NotebookLM": false,
+      "star-notebooklm:Open NotebookLM": false,
+      "media-extended:打开媒体库": false,
+      "media-extended:打开媒体快速切换器": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "github-sync:Sync with Remote": false
+    }
+  },
+  "active": "2be73602205767f9",
+  "lastOpenFiles": [
+    "DailyTasks/2026/9月.md",
+    "未命名 1.md",
+    "未命名.md",
+    "单点登录SSO原理详解CASOAuth2OIDC一次讲清.md",
+    "知识库/概念/精力复利.md",
+    "知识库/概念/高杠杆任务.md",
+    "知识库/概念/限界上下文.md",
+    "知识库/概念/预期差.md",
+    "知识库/概念/道氏理论.md",
+    "知识库/概念/身体地基.md",
+    "知识库/概念/跨库 Join.md",
+    "知识库/概念/认知节律.md",
+    "知识库/概念/规划谬误.md",
+    "知识库/概念/自我妨碍.md",
+    "知识库/概念/自动装配.md",
+    "知识库/概念/能级.md",
+    "知识库/概念/精力账户.md",
+    "知识库/概念/穷变通久.md",
+    "知识库/概念/社会比较.md",
+    "知识库/概念/现状偏见.md",
+    "知识库/概念/清结算.md",
+    "知识库/概念/流量回放.md",
+    "知识库/概念/水位.md",
+    "知识库/概念/条件注解.md",
+    "知识库/概念/未来自我连续性.md",
+    "知识库/概念/支付网关.md",
+    "知识库/输出",
+    "知识库/综合",
+    "知识库/概念",
+    "知识库/摘要",
+    "知识库/实体",
+    "知识库",
+    "原始资料/附件/wechat_img_1789118044966_130.jpg",
+    "原始资料/附件/wechat_img_1789118044908_414.jpg",
+    "原始资料/附件/wechat_img_1789118044709_55.jpg",
+    "原始资料/附件/wechat_img_1789118044603_79.jpg",
+    "原始资料/附件/wechat_img_1789118044469_543.jpg",
+    "原始资料/附件/wechat_img_1789118044427_926.jpg",
+    "原始资料/附件/wechat_img_1789118044285_839.jpg",
+    "原始资料/附件/wechat_img_1789026422414_812.jpg",
+    "原始资料/附件/wechat_img_1788246812087_688.jpg",
+    "原始资料/附件/wechat_img_1788246811980_991.jpg",
+    "原始资料/每日笔记/2026",
+    "原始资料/归档/-video-screenshots.base",
+    "原始资料/归档/-video-screenshots-without-notes.base",
+    "原始资料/归档/-hovernotes.base",
+    "未命名.canvas"
+  ]
+}
