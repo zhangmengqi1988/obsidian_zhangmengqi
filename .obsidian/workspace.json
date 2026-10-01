@@ -358,6 +358,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "copilot:Open Copilot Agent Chat": false,
       "star-notebooklm:Send to NotebookLM": false,
       "star-notebooklm:Open NotebookLM": false,
       "media-extended:打开媒体库": false,
@@ -374,6 +375,8 @@
   },
   "active": "2be73602205767f9",
   "lastOpenFiles": [
+    "原始资料/每日笔记/2026/10月.md",
+    "原始资料/每日笔记/每日笔记",
     "原始资料/附件/Pasted image 20260930093257.png",
     "原始资料/心理学和行为科学/哈佛大学：富人都是一下子富起来的.md",
     "原始数据/剪藏/哈佛大学：钱，为什么都流向不缺钱的人.md",
@@ -417,9 +420,7 @@
     "原始资料/附件/wechat_img_1789118044285_839.jpg",
     "原始资料/附件/wechat_img_1789026422414_812.jpg",
     "原始资料/附件/wechat_img_1788246812087_688.jpg",
-    "原始资料/附件/wechat_img_1788246811980_991.jpg",
     "原始资料/每日笔记/2026",
-    "原始资料/归档/-video-screenshots.base",
     "未命名.canvas"
   ]
 }
