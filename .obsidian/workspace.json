@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "原始资料/每日笔记/2026/10月.md",
+                "file": "原始资料/心理学和行为科学/斯坦福大学：缺乏主体性，人就会紧张.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10月"
+              "title": "斯坦福大学：缺乏主体性，人就会紧张"
             }
           }
         ],
@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tavily",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,12 +86,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -226,8 +230,11 @@
       "copilot:Open Copilot Agent Chat": false
     }
   },
-  "active": "cba957232a1af401",
+  "active": "26d42c040f71d00e",
   "lastOpenFiles": [
+    "原始资料/心理学和行为科学/恐惧.md",
+    "原始资料/心理学和行为科学/斯坦福大学：缺乏主体性，人就会紧张.md",
+    "原始资料/每日笔记/2026/10月.md",
     "原始资料/截图笔记/道氏理论.md",
     "原始资料/附件/Pasted image 20261012212419.png",
     "原始资料/附件/Pasted image 20261012212049.png",
@@ -239,7 +246,6 @@
     "原始资料/附件/Pasted image 20261012195005.png",
     "原始资料/附件/Pasted image 20261012194636.png",
     "原始资料/附件/Pasted image 20261012194019.png",
-    "原始资料/每日笔记/2026/10月.md",
     "未命名 4.md",
     "未命名 3.md",
     "原始资料/截图笔记/道氏理论1文字稿.md",
@@ -270,7 +276,6 @@
     "单点登录SSO原理详解CASOAuth2OIDC一次讲清.md",
     "DailyTasks/2026/9月.md",
     "知识库/概念/道氏理论.md",
-    "原始资料/心理学和行为科学/恐惧.md",
     "原始资料/心理学和行为科学/精力.md",
     "原始资料/剪藏/炒股周期论.md",
     "未命名.canvas"
