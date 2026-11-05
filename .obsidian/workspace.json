@@ -216,8 +216,11 @@
   },
   "active": "d898df4045b2ffcc",
   "lastOpenFiles": [
-    "原始资料/截图笔记/量化理论.md",
+    "原始资料/技术/java/响应式和非响应式的本质区别.md",
     "原始资料/每日笔记/2026/11月.md",
+    "原始资料/技术/java",
+    "原始资料/技术",
+    "原始资料/截图笔记/量化理论.md",
     "原始资料/附件/Pasted image 20261029170546.png",
     "原始资料/附件/Pasted image 20261029161630.png",
     "原始资料/附件/Pasted image 20261027202055.png",
@@ -251,9 +254,7 @@
     "copilot/skills/copilot-fetch-x/fetch-x.ps1",
     "copilot/skills/copilot-fetch-x/fetch-x.cmd",
     "copilot/skills/copilot-fetch-x/fetch-x.sh",
-    "copilot/skills/copilot-fetch-x",
     "copilot/skills/copilot-youtube-transcript/SKILL.md",
-    "copilot/skills/copilot-youtube-transcript/youtube-transcript.ps1",
     "copilot/skills/copilot-read-pdf/SKILL.md",
     "copilot/skills/copilot-web-fetch/SKILL.md",
     "copilot/skills/copilot-web-search/SKILL.md",
@@ -261,7 +262,6 @@
     "原始资料/心理学和行为科学/【高阶思维】纳瓦尔：好东西都是等出来的.md",
     "架构设计积分系统.md",
     "未命名.md",
-    "未命名 1.md",
     "未命名.canvas"
   ]
 }
