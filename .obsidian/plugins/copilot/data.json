@@ -318,7 +318,7 @@
   "inlineEditCommands": [],
   "projectList": [],
   "lastDismissedVersion": null,
-  "lastShownStartupVersion": "4.0.15",
+  "lastShownStartupVersion": "4.0.19",
   "passMarkdownImages": true,
   "enableAutonomousAgent": true,
   "enableCustomPromptTemplating": true,
@@ -401,7 +401,7 @@
       "info": {
         "id": "default",
         "displayName": "Default (recommended)",
-        "description": "Use the default model (currently glm-5.2[1m])"
+        "description": "Use the default model (currently Opus 5 (1M context)) · $5/$25 per Mtok"
       },
       "configuredModelId": "14d9bf6a-1586-4c54-9f6c-7fb016714eca",
       "configuredAt": 1789631411301
@@ -410,7 +410,7 @@
       "providerId": "9b2a4b16-af19-48f0-baf4-6819e1e4d495",
       "info": {
         "id": "sonnet",
-        "displayName": "qwen3.8-flash",
+        "displayName": "DeepSeek V4 flash",
         "description": "Custom Sonnet model"
       },
       "configuredModelId": "fb581757-e522-4de2-8828-f32a0c64c8d5",
@@ -420,7 +420,7 @@
       "providerId": "9b2a4b16-af19-48f0-baf4-6819e1e4d495",
       "info": {
         "id": "haiku",
-        "displayName": "deepseek-v4-flash-0731",
+        "displayName": "gpt-5.6-sol",
         "description": "Custom Haiku model"
       },
       "configuredModelId": "844ba25e-1163-4bc6-9708-1ad8d850b55c",
@@ -429,22 +429,22 @@
     {
       "providerId": "9b2a4b16-af19-48f0-baf4-6819e1e4d495",
       "info": {
-        "id": "opus",
+        "id": "fable",
         "displayName": "glm-5.2",
-        "description": "Custom Opus model"
+        "description": "Custom Fable model"
       },
-      "configuredModelId": "3dc4fdcb-f3a5-4ab7-807c-dafbeef44780",
+      "configuredModelId": "12a605c6-d2e6-4ae1-9dc1-844bd8eb4cab",
       "configuredAt": 1789645298393
     },
     {
       "providerId": "9b2a4b16-af19-48f0-baf4-6819e1e4d495",
       "info": {
-        "id": "fable",
-        "displayName": "deepseek-v4.1-flash",
-        "description": "Custom Fable model"
+        "id": "opus[1m]",
+        "displayName": "Opus (1M context)",
+        "description": "Opus 5 with 1M context · Best for everyday, complex tasks · $5/$25 per Mtok"
       },
-      "configuredModelId": "12a605c6-d2e6-4ae1-9dc1-844bd8eb4cab",
-      "configuredAt": 1789645298393
+      "configuredModelId": "6cb6ddd9-32a9-4882-a20a-d9c773637fca",
+      "configuredAt": 1794534812558
     }
   ],
   "backends": {
@@ -521,25 +521,6 @@
         "id": "deepseek-v4-pro",
         "displayName": "DeepSeek V4 Pro",
         "description": "A top-tier model for the hardest reasoning and agentic tasks.",
-        "toolCall": true,
-        "reasoning": true,
-        "reasoningEfforts": [],
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "limits": {
-          "context": 1048576
-        }
-      },
-      {
-        "id": "deepseek-v4-flash-0731",
-        "displayName": "DeepSeek V4 Flash 0731",
-        "description": "The July 2026 DeepSeek V4 Flash snapshot: fast, cheap, and broadly capable.",
         "toolCall": true,
         "reasoning": true,
         "reasoningEfforts": [],
