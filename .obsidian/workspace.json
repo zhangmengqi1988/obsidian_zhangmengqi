@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "原始资料/每日笔记/2026/11月.md",
+                "file": "原始资料/截图笔记/量化理论.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "11月"
+              "title": "量化理论"
             }
           }
         ],
@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "量化",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +94,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -231,6 +232,13 @@
   },
   "active": "23cc3859aa09f614",
   "lastOpenFiles": [
+    "原始资料/附件/Pasted image 20261114155218.png",
+    "原始资料/附件/Pasted image 20261114153646.png",
+    "原始资料/附件/Pasted image 20261114153627.png",
+    "原始资料/附件/Pasted image 20261114153610.png",
+    "原始资料/剪藏/大模型微调方法.md",
+    "原始资料/剪藏/炒股周期论.md",
+    "原始资料/每日笔记/2026/11月.md",
     "原始资料/截图笔记/量化理论.md",
     "原始资料/附件/Pasted image 20261109201939.png",
     "原始资料/附件/Pasted image 20261109195739.png",
@@ -238,9 +246,7 @@
     "原始资料/附件/Pasted image 20261109195309.png",
     "原始资料/截图笔记/道氏理论.md",
     "原始资料/截图笔记/道氏理论1文字稿.md",
-    "原始资料/剪藏/炒股周期论.md",
     "未命名 8.md",
-    "原始资料/每日笔记/2026/11月.md",
     "未命名 7.md",
     "原始资料/技术/java/响应式和非响应式的本质区别.md",
     "原始资料/技术/java",
@@ -248,9 +254,6 @@
     "原始资料/附件/Pasted image 20261029170546.png",
     "原始资料/附件/Pasted image 20261029161630.png",
     "原始资料/附件/Pasted image 20261027202055.png",
-    "原始资料/附件/Pasted image 20261027201719.png",
-    "原始资料/附件/Pasted image 20261027183002.png",
-    "原始资料/附件/Pasted image 20261027182045.png",
     "原始资料/每日笔记/2026/10月.md",
     "2026-10-19.md",
     "原始资料/心理学和行为科学/斯坦福大学：缺乏主体性，人就会紧张.md",
@@ -275,7 +278,6 @@
     "copilot/skills/copilot-youtube-transcript/SKILL.md",
     "copilot/skills/copilot-read-pdf/SKILL.md",
     "copilot/skills/copilot-web-fetch/SKILL.md",
-    "copilot/skills/copilot-web-search/SKILL.md",
     "未命名.canvas"
   ]
 }
